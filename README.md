@@ -1,1 +1,1 @@
-# waveswebsite
+# Website for Waves
