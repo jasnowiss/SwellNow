@@ -49,5 +49,7 @@ end
 gem 'rails_12factor', group: :production
 # Specify Rails version
 ruby "2.2.3"
+# Puma Webserver
+gem 'puma'
 
 
