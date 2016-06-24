@@ -52,6 +52,6 @@ gem 'rails_12factor', group: :production
 # Puma Webserver
 gem 'puma'
 
-gem 'tzinfo-data'
+# gem 'tzinfo-data'
 
 
