@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
 
-  # get 'about' => 'static_pages#about'
+  get 'ca' => 'static_pages#california'
   # get 'experience' => 'static_pages#experience'
   # get 'fun' => 'static_pages#fun'
   # get 'resume' => 'static_pages#resume'
