@@ -36,13 +36,16 @@ $(document).ready(function() {
         return false;
     });
 
-    /*** SECTION FOR COLOR SENSING ***/
-    // set up some sample squares
+    /*** SECTION FOR RESIZING ***/
+    // resize the canvas to fill browser window dynamically
+    window.addEventListener('resize', resizeObjs, false);
+
+    function resizeObjs() {
+        resizeCanvas();
+    }
+
     var canvas = document.getElementById('canvas');
     var context = canvas.getContext('2d');
-
-    // resize the canvas to fill browser window dynamically
-    window.addEventListener('resize', resizeCanvas, false);
 
     function resizeCanvas() {
             var chartSize = document.getElementById('chart').offsetWidth * 2.0 / 3.0;
@@ -55,8 +58,7 @@ $(document).ready(function() {
              */
             drawStuff(); 
     }
-    resizeCanvas();
-
+    
     function drawStuff() {
         // context.fillStyle = "rgb(255,0,0)";
         // context.fillRect(0, 0, 50, 50);
@@ -71,6 +73,9 @@ $(document).ready(function() {
         }
     }
 
+    resizeObjs();
+    
+    /*** SECTION FOR COLOR SENSING ***/
     $('#canvas').mousemove(function(e) {
         var pos = findPos(this);
         var x = e.pageX - pos.x;

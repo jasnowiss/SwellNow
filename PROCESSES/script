@@ -1,0 +1,10 @@
+curl http://www.ndbc.noaa.gov/station_page.php?station=46047 > TannerData.txt
+
+sed -i.bak -n -E -e '/Significant Wave Height/,$ p' TannerData.txt
+
+sed -i.bak -n 1,7p TannerData.txt
+
+sed -i.bak 's/.*://;s/<\/td>//g;s/<td>//;s/<\/tr>//;s/^[ \t]*//;s/ ft//;s/ sec//' TannerData.txt
+rm TannerData.txt.bak
+
+
