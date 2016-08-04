@@ -16,13 +16,60 @@
 </section> -->
 
 <div class="page-home">
-  <div class="container" id="chart">
-      <div id="status"></div>
-      <canvas id="canvas" width="200" height="60"></canvas>
+  <div class="container" id="dropmenu">
+    <div id="dd-menu1" class="dropdown" style="position:relative;display:inline-block">
+      <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">World <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li>
+          <a class="trigger right-caret">North American West Coast</a>
+          <ul class="dropdown-menu sub-menu">
+            <li>
+              <a class="trigger right-caret">Southern California</a>
+              <ul class="dropdown-menu sub-menu">
+                <li><a href="#" onclick="rename('Santa Barbara');return false;">Santa Barbara</a></li>
+                <li><a href="#" onclick="rename('Los Angeles');return false;">Los Angeles</a></li>
+                <li><a href="#" onclick="rename('Orange County');return false;">Orange County</a></li>
+                <li><a href="#" onclick="rename('San Diego');return false;">San Diego</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="dropdown" style="position:relative;display:inline-block">
+      <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">North American West Coast <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li>
+          <a class="trigger right-caret">Southern California</a>
+          <ul class="dropdown-menu sub-menu">
+            <li><a href="#" onclick="rename('Santa Barbara');return false;">Santa Barbara</a></li>
+            <li><a href="#" onclick="rename('Los Angeles');return false;">Los Angeles</a></li>
+            <li><a href="#" onclick="rename('Orange County');return false;">Orange County</a></li>
+            <li><a href="#" onclick="rename('San Diego');return false;">San Diego</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="dropdown" style="position:relative;display:inline-block">
+      <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Southern California <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#" onclick="rename('Santa Barbara');return false;">Santa Barbara</a></li>
+        <li><a href="#" onclick="rename('Los Angeles');return false;">Los Angeles</a></li>
+        <li><a href="#" onclick="rename('Orange County');return false;">Orange County</a></li>
+        <li><a href="#" onclick="rename('San Diego');return false;">San Diego</a></li>
+      </ul>
+    </div>
+    <div class="dropdown" style="position:relative;display:inline-block">
+      <a href="#" id="ca-county" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Los Angeles</a>
+    </div>
   </div>
   <div class="container" id="chart">
-      <div id="status"></div>
-      <canvas id="canvas" width="200" height="60"></canvas>
+    <div class="row" style="margin-top: 37px">
+      <div class="col-xs-9">
+        <canvas id="canvas" width="200" height="60"></canvas>
+      </div>
+      <div id="status" class="col-xs-3"></div>
+    </div>
   </div>
   <div class="container">
     <div class="row" style="margin-top: 37px">
