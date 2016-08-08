@@ -51,6 +51,7 @@ $(document).ready(function() {
             var chartSize = document.getElementById('chart').offsetWidth * 2.0 / 3.0;
             canvas.width = chartSize;
             canvas.height = chartSize;
+            canvas.style.cursor = "crosshair";
 
             /**
              * Your drawings need to be inside this function otherwise they will be reset when 
