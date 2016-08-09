@@ -51,7 +51,7 @@ h1,h2,h3,h4,h5,h6
 {
 	background-color: #222;
 }
-.btn-primary
+/*.btn-primary
 {
 	background-color: #fed136;
 	border-color: #fed136;
@@ -79,7 +79,7 @@ h1,h2,h3,h4,h5,h6
 {
 	background-color: #fff;
 	color: #fed136;
-}
+}*/
 .btn-xl
 {
 	background-color: #fed136;
@@ -1167,6 +1167,22 @@ body
 }
 
 /*** DROPDOWN MENU SECTION ***/
+.btn {
+	background-color: #204d74;
+	border-color:  #204d74;
+}
+.btn-primary {
+	background-color: #204d74;
+	border-color:  #204d74;
+}
+.btn-primary:hover {
+	background-color: #0066cc;
+	border-color:  #0066cc;
+}
+.btn-primary:active {
+	background-color: #204d74;
+	border-color:  #204d74;
+}
 .dropdown .caret {
   transform:rotate(-90deg);
 }
