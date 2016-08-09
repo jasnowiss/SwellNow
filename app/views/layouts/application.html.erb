@@ -45,9 +45,16 @@
 
   <!-- jQuery plugins, because the Rails default ones screwed me -->
   <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js' %>
-  <%= javascript_include_tag 'http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.effects.core.js' %>
+  <%= javascript_include_tag 'http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.effects.core.js' %> <!-- resource throwing error -->
 
 </head>
+
+<!-- LOGO IMAGES -->
+<!-- <img src="https://dl.dropboxusercontent.com/s/3wzdro30n2ao8kh/swellnowlogov1.png" style="width:340.5px;height:80px;"> -->
+<!-- <img src="https://dl.dropboxusercontent.com/s/mnt917m0vw7bx35/swellnowlogov2.png
+" style="width:340.5px;height:80px;"> -->
+<!-- <img src="https://dl.dropboxusercontent.com/s/nyek5z0wpbgysd8/swellnowlogov1-hl.png" style="width:340.5px;height:80px;"> -->
+<!-- <img src="https://dl.dropboxusercontent.com/s/nee28n6gliji78x/swellnowlogov2-hl.png" style="width:340.5px;height:80px;"> -->
 
 <body id="page-top" class="index">
 
@@ -62,7 +69,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <%= link_to "Swell Check", root_path, :class => "navbar-brand page-scroll" %>
+        <%= link_to image_tag("https://dl.dropboxusercontent.com/s/mnt917m0vw7bx35/swellnowlogov2.png", size:"200x35"), root_path %> <!-- 5.8 ratio -->
         <!-- <a class="navbar-brand page-scroll" href="#page-top">Jeffrey Snowiss</a> -->
       </div>
 
