@@ -1,13 +1,13 @@
 1
 
-                    Execution started at 20160815.123554         
+                    Execution started at 20160815.185603         
 
 
 
                     ---------------------------------------
                                      SWAN
                     SIMULATION OF WAVES IN NEAR SHORE AREAS
-                             VERSION NUMBER 41.01AB             
+                             VERSION NUMBER 41.01               
                     ---------------------------------------
 
 
@@ -38,7 +38,7 @@
     
  !
     
- CGRID -117.75  32.5   0. .75  1.0 300 400 CIRCLE 36 0.0521 1. 31
+ CGRID -117.75  32.5   0. .75  1.0 30 40 CIRCLE 36 0.0521 1. 31
  Resolution in sigma-space: df/f =  0.1000
     
  !
@@ -47,173 +47,29 @@
     
  !
     
- READINP BOTTOM 1. '.\inputs\SoCal_high.txt' 1 0 FREE
+ READINP BOTTOM 1. 'SoCal_high.txt' 1 0 FREE
  ** Warning          : Point removed from computational grid
-Point with index (    19,   386) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
+Point with index (    25,     8) was removed from computational grid because it is an isolated wet point or is part of a 1D configuration or 1D connection.
  ** Warning          : Point removed from computational grid
-Point with index (    28,   386) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
+Point with index (    24,     9) was removed from computational grid because it is an isolated wet point or is part of a 1D configuration or 1D connection.
  ** Warning          : Point removed from computational grid
-Point with index (   142,   287) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
+Point with index (    21,    12) was removed from computational grid because it is an isolated wet point or is part of a 1D configuration or 1D connection.
  ** Warning          : Point removed from computational grid
-Point with index (   143,   286) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
+Point with index (    21,    18) was removed from computational grid because it is an isolated wet point or is part of a 1D configuration or 1D connection.
  ** Warning          : Point removed from computational grid
-Point with index (   144,   283) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
+Point with index (     1,    41) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
  ** Warning          : Point removed from computational grid
-Point with index (   145,   283) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
+Point with index (    22,    12) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
  ** Warning          : Point removed from computational grid
-Point with index (   165,   258) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
+Point with index (    23,    10) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
  ** Warning          : Point removed from computational grid
-Point with index (   168,   259) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
+Point with index (    24,    10) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
  ** Warning          : Point removed from computational grid
-Point with index (   168,   260) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
+Point with index (    26,     6) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
  ** Warning          : Point removed from computational grid
-Point with index (   169,   258) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
+Point with index (    26,     7) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
  ** Warning          : Point removed from computational grid
-Point with index (   169,   259) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   170,   258) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   177,   236) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   184,   236) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   184,   237) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   185,   236) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   191,   236) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   192,   235) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   192,   236) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   200,   104) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   200,   116) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   201,   104) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   214,   117) was removed from computational grid because it is an isolated wet point or is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   207,   112) was removed from computational grid because it is an isolated wet point or is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   201,   171) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   201,   205) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   202,   108) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   204,   103) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   205,   103) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   206,    84) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   206,   111) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   206,   112) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   207,   104) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   207,   105) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   208,    88) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   208,   104) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   209,   104) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   210,   104) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   210,   108) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   211,   104) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   211,   108) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   212,   104) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   212,   108) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   213,   104) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   213,   107) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   213,   108) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   213,   109) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   214,   107) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   214,   111) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   215,   107) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   215,   113) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   215,   114) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   215,   117) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   215,   119) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   216,   105) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   216,   107) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   216,   112) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   216,   114) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   216,   115) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   216,   116) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   216,   117) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   217,   105) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   217,   108) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   217,   109) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   217,   114) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   218,    96) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   218,   105) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   219,   105) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   222,   105) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   231,    73) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   232,    72) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   232,    73) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   233,    72) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   241,    62) was removed from computational grid because it is an isolated wet point or is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   245,    55) was removed from computational grid because it is an isolated wet point or is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   255,    41) was removed from computational grid because it is an isolated wet point or is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   260,    51) was removed from computational grid because it is an isolated wet point or is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   248,    49) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   248,    51) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   255,    39) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   255,    40) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   255,    60) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
- ** Warning          : Point removed from computational grid
-Point with index (   256,    60) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
+Point with index (    26,     8) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
     
  !
     
@@ -226,6 +82,207 @@ Point with index (   256,    60) was removed from computational grid, because it
  !
     
  BOUNDNEST NEST 'nestSD' CLOSED
+ Warning: no grid points on interval from    -117.7475     32.5000 to    -117.7450     32.5000
+ Warning: no grid points on interval from    -117.7450     32.5000 to    -117.7425     32.5000
+ Warning: no grid points on interval from    -117.7425     32.5000 to    -117.7400     32.5000
+ Warning: no grid points on interval from    -117.7400     32.5000 to    -117.7375     32.5000
+ Warning: no grid points on interval from    -117.7375     32.5000 to    -117.7350     32.5000
+ Warning: no grid points on interval from    -117.7350     32.5000 to    -117.7325     32.5000
+ Warning: no grid points on interval from    -117.7325     32.5000 to    -117.7300     32.5000
+ Warning: no grid points on interval from    -117.7300     32.5000 to    -117.7275     32.5000
+ Warning: no grid points on interval from    -117.7225     32.5000 to    -117.7200     32.5000
+ Warning: no grid points on interval from    -117.7200     32.5000 to    -117.7175     32.5000
+ Warning: no grid points on interval from    -117.7175     32.5000 to    -117.7150     32.5000
+ Warning: no grid points on interval from    -117.7150     32.5000 to    -117.7125     32.5000
+ Warning: no grid points on interval from    -117.7125     32.5000 to    -117.7100     32.5000
+ Warning: no grid points on interval from    -117.7100     32.5000 to    -117.7075     32.5000
+ Warning: no grid points on interval from    -117.7075     32.5000 to    -117.7050     32.5000
+ Warning: no grid points on interval from    -117.7050     32.5000 to    -117.7025     32.5000
+ Warning: no grid points on interval from    -117.6975     32.5000 to    -117.6950     32.5000
+ Warning: no grid points on interval from    -117.6950     32.5000 to    -117.6925     32.5000
+ Warning: no grid points on interval from    -117.6925     32.5000 to    -117.6900     32.5000
+ Warning: no grid points on interval from    -117.6900     32.5000 to    -117.6875     32.5000
+ Warning: no grid points on interval from    -117.6875     32.5000 to    -117.6850     32.5000
+ Warning: no grid points on interval from    -117.6850     32.5000 to    -117.6825     32.5000
+ Warning: no grid points on interval from    -117.6825     32.5000 to    -117.6800     32.5000
+ Warning: no grid points on interval from    -117.6800     32.5000 to    -117.6775     32.5000
+ Warning: no grid points on interval from    -117.6725     32.5000 to    -117.6700     32.5000
+ Warning: no grid points on interval from    -117.6700     32.5000 to    -117.6675     32.5000
+ Warning: no grid points on interval from    -117.6675     32.5000 to    -117.6650     32.5000
+ Warning: no grid points on interval from    -117.6650     32.5000 to    -117.6625     32.5000
+ Warning: no grid points on interval from    -117.6625     32.5000 to    -117.6600     32.5000
+ Warning: no grid points on interval from    -117.6600     32.5000 to    -117.6575     32.5000
+ Warning: no grid points on interval from    -117.6575     32.5000 to    -117.6550     32.5000
+ Warning: no grid points on interval from    -117.6550     32.5000 to    -117.6525     32.5000
+ Warning: no grid points on interval from    -117.6475     32.5000 to    -117.6450     32.5000
+ Warning: no grid points on interval from    -117.6450     32.5000 to    -117.6425     32.5000
+ Warning: no grid points on interval from    -117.6425     32.5000 to    -117.6400     32.5000
+ Warning: no grid points on interval from    -117.6400     32.5000 to    -117.6375     32.5000
+ Warning: no grid points on interval from    -117.6375     32.5000 to    -117.6350     32.5000
+ Warning: no grid points on interval from    -117.6350     32.5000 to    -117.6325     32.5000
+ Warning: no grid points on interval from    -117.6325     32.5000 to    -117.6300     32.5000
+ Warning: no grid points on interval from    -117.6300     32.5000 to    -117.6275     32.5000
+ Warning: no grid points on interval from    -117.6225     32.5000 to    -117.6200     32.5000
+ Warning: no grid points on interval from    -117.6200     32.5000 to    -117.6175     32.5000
+ Warning: no grid points on interval from    -117.6175     32.5000 to    -117.6150     32.5000
+ Warning: no grid points on interval from    -117.6150     32.5000 to    -117.6125     32.5000
+ Warning: no grid points on interval from    -117.6125     32.5000 to    -117.6100     32.5000
+ Warning: no grid points on interval from    -117.6100     32.5000 to    -117.6075     32.5000
+ Warning: no grid points on interval from    -117.6075     32.5000 to    -117.6050     32.5000
+ Warning: no grid points on interval from    -117.6050     32.5000 to    -117.6025     32.5000
+ Warning: no grid points on interval from    -117.5975     32.5000 to    -117.5950     32.5000
+ Warning: no grid points on interval from    -117.5950     32.5000 to    -117.5925     32.5000
+ Warning: no grid points on interval from    -117.5925     32.5000 to    -117.5900     32.5000
+ Warning: no grid points on interval from    -117.5900     32.5000 to    -117.5875     32.5000
+ Warning: no grid points on interval from    -117.5875     32.5000 to    -117.5850     32.5000
+ Warning: no grid points on interval from    -117.5850     32.5000 to    -117.5825     32.5000
+ Warning: no grid points on interval from    -117.5825     32.5000 to    -117.5800     32.5000
+ Warning: no grid points on interval from    -117.5800     32.5000 to    -117.5775     32.5000
+ Warning: no grid points on interval from    -117.5725     32.5000 to    -117.5700     32.5000
+ Warning: no grid points on interval from    -117.5700     32.5000 to    -117.5675     32.5000
+ Warning: no grid points on interval from    -117.5675     32.5000 to    -117.5650     32.5000
+ Warning: no grid points on interval from    -117.5650     32.5000 to    -117.5625     32.5000
+ Warning: no grid points on interval from    -117.5625     32.5000 to    -117.5600     32.5000
+ Warning: no grid points on interval from    -117.5600     32.5000 to    -117.5575     32.5000
+ Warning: no grid points on interval from    -117.5575     32.5000 to    -117.5550     32.5000
+ Warning: no grid points on interval from    -117.5550     32.5000 to    -117.5525     32.5000
+ Warning: no grid points on interval from    -117.5475     32.5000 to    -117.5450     32.5000
+ Warning: no grid points on interval from    -117.5450     32.5000 to    -117.5425     32.5000
+ Warning: no grid points on interval from    -117.5425     32.5000 to    -117.5400     32.5000
+ Warning: no grid points on interval from    -117.5400     32.5000 to    -117.5375     32.5000
+ Warning: no grid points on interval from    -117.5375     32.5000 to    -117.5350     32.5000
+ Warning: no grid points on interval from    -117.5350     32.5000 to    -117.5325     32.5000
+ Warning: no grid points on interval from    -117.5325     32.5000 to    -117.5300     32.5000
+ Warning: no grid points on interval from    -117.5300     32.5000 to    -117.5275     32.5000
+ Warning: no grid points on interval from    -117.5225     32.5000 to    -117.5200     32.5000
+ Warning: no grid points on interval from    -117.5200     32.5000 to    -117.5175     32.5000
+ Warning: no grid points on interval from    -117.5175     32.5000 to    -117.5150     32.5000
+ Warning: no grid points on interval from    -117.5150     32.5000 to    -117.5125     32.5000
+ Warning: no grid points on interval from    -117.5125     32.5000 to    -117.5100     32.5000
+ Warning: no grid points on interval from    -117.5100     32.5000 to    -117.5075     32.5000
+ Warning: no grid points on interval from    -117.5075     32.5000 to    -117.5050     32.5000
+ Warning: no grid points on interval from    -117.5050     32.5000 to    -117.5025     32.5000
+ Warning: no grid points on interval from    -117.4975     32.5000 to    -117.4950     32.5000
+ Warning: no grid points on interval from    -117.4950     32.5000 to    -117.4925     32.5000
+ Warning: no grid points on interval from    -117.4925     32.5000 to    -117.4900     32.5000
+ Warning: no grid points on interval from    -117.4900     32.5000 to    -117.4875     32.5000
+ Warning: no grid points on interval from    -117.4875     32.5000 to    -117.4850     32.5000
+ Warning: no grid points on interval from    -117.4850     32.5000 to    -117.4825     32.5000
+ Warning: no grid points on interval from    -117.4825     32.5000 to    -117.4800     32.5000
+ Warning: no grid points on interval from    -117.4800     32.5000 to    -117.4775     32.5000
+ Warning: no grid points on interval from    -117.4725     32.5000 to    -117.4700     32.5000
+ Warning: no grid points on interval from    -117.4700     32.5000 to    -117.4675     32.5000
+ Warning: no grid points on interval from    -117.4675     32.5000 to    -117.4650     32.5000
+ Warning: no grid points on interval from    -117.4650     32.5000 to    -117.4625     32.5000
+ Warning: no grid points on interval from    -117.4625     32.5000 to    -117.4600     32.5000
+ Warning: no grid points on interval from    -117.4600     32.5000 to    -117.4575     32.5000
+ Warning: no grid points on interval from    -117.4575     32.5000 to    -117.4550     32.5000
+ Warning: no grid points on interval from    -117.4550     32.5000 to    -117.4525     32.5000
+ Warning: no grid points on interval from    -117.4475     32.5000 to    -117.4450     32.5000
+ Warning: no grid points on interval from    -117.4450     32.5000 to    -117.4425     32.5000
+ Warning: no grid points on interval from    -117.4425     32.5000 to    -117.4400     32.5000
+ Warning: no grid points on interval from    -117.4400     32.5000 to    -117.4375     32.5000
+ Warning: no grid points on interval from    -117.4375     32.5000 to    -117.4350     32.5000
+ Warning: no grid points on interval from    -117.4350     32.5000 to    -117.4325     32.5000
+ Warning: no grid points on interval from    -117.4325     32.5000 to    -117.4300     32.5000
+ Warning: no grid points on interval from    -117.4300     32.5000 to    -117.4275     32.5000
+ Warning: no grid points on interval from    -117.4225     32.5000 to    -117.4200     32.5000
+ Warning: no grid points on interval from    -117.4200     32.5000 to    -117.4175     32.5000
+ Warning: no grid points on interval from    -117.4175     32.5000 to    -117.4150     32.5000
+ Warning: no grid points on interval from    -117.4150     32.5000 to    -117.4125     32.5000
+ Warning: no grid points on interval from    -117.4125     32.5000 to    -117.4100     32.5000
+ Warning: no grid points on interval from    -117.4100     32.5000 to    -117.4075     32.5000
+ Warning: no grid points on interval from    -117.4075     32.5000 to    -117.4050     32.5000
+ Warning: no grid points on interval from    -117.4050     32.5000 to    -117.4025     32.5000
+ Warning: no grid points on interval from    -117.3975     32.5000 to    -117.3950     32.5000
+ Warning: no grid points on interval from    -117.3950     32.5000 to    -117.3925     32.5000
+ Warning: no grid points on interval from    -117.3925     32.5000 to    -117.3900     32.5000
+ Warning: no grid points on interval from    -117.3900     32.5000 to    -117.3875     32.5000
+ Warning: no grid points on interval from    -117.3875     32.5000 to    -117.3850     32.5000
+ Warning: no grid points on interval from    -117.3850     32.5000 to    -117.3825     32.5000
+ Warning: no grid points on interval from    -117.3825     32.5000 to    -117.3800     32.5000
+ Warning: no grid points on interval from    -117.3800     32.5000 to    -117.3775     32.5000
+ Warning: no grid points on interval from    -117.3725     32.5000 to    -117.3700     32.5000
+ Warning: no grid points on interval from    -117.3700     32.5000 to    -117.3675     32.5000
+ Warning: no grid points on interval from    -117.3675     32.5000 to    -117.3650     32.5000
+ Warning: no grid points on interval from    -117.3650     32.5000 to    -117.3625     32.5000
+ Warning: no grid points on interval from    -117.3625     32.5000 to    -117.3600     32.5000
+ Warning: no grid points on interval from    -117.3600     32.5000 to    -117.3575     32.5000
+ Warning: no grid points on interval from    -117.3575     32.5000 to    -117.3550     32.5000
+ Warning: no grid points on interval from    -117.3550     32.5000 to    -117.3525     32.5000
+ Warning: no grid points on interval from    -117.3475     32.5000 to    -117.3450     32.5000
+ Warning: no grid points on interval from    -117.3450     32.5000 to    -117.3425     32.5000
+ Warning: no grid points on interval from    -117.3425     32.5000 to    -117.3400     32.5000
+ Warning: no grid points on interval from    -117.3400     32.5000 to    -117.3375     32.5000
+ Warning: no grid points on interval from    -117.3375     32.5000 to    -117.3350     32.5000
+ Warning: no grid points on interval from    -117.3350     32.5000 to    -117.3325     32.5000
+ Warning: no grid points on interval from    -117.3325     32.5000 to    -117.3300     32.5000
+ Warning: no grid points on interval from    -117.3300     32.5000 to    -117.3275     32.5000
+ Warning: no grid points on interval from    -117.3225     32.5000 to    -117.3200     32.5000
+ Warning: no grid points on interval from    -117.3200     32.5000 to    -117.3175     32.5000
+ Warning: no grid points on interval from    -117.3175     32.5000 to    -117.3150     32.5000
+ Warning: no grid points on interval from    -117.3150     32.5000 to    -117.3125     32.5000
+ Warning: no grid points on interval from    -117.3125     32.5000 to    -117.3100     32.5000
+ Warning: no grid points on interval from    -117.3100     32.5000 to    -117.3075     32.5000
+ Warning: no grid points on interval from    -117.3075     32.5000 to    -117.3050     32.5000
+ Warning: no grid points on interval from    -117.3050     32.5000 to    -117.3025     32.5000
+ Warning: no grid points on interval from    -117.2975     32.5000 to    -117.2950     32.5000
+ Warning: no grid points on interval from    -117.2950     32.5000 to    -117.2925     32.5000
+ Warning: no grid points on interval from    -117.2925     32.5000 to    -117.2900     32.5000
+ Warning: no grid points on interval from    -117.2900     32.5000 to    -117.2875     32.5000
+ Warning: no grid points on interval from    -117.2875     32.5000 to    -117.2850     32.5000
+ Warning: no grid points on interval from    -117.2850     32.5000 to    -117.2825     32.5000
+ Warning: no grid points on interval from    -117.2825     32.5000 to    -117.2800     32.5000
+ Warning: no grid points on interval from    -117.2800     32.5000 to    -117.2775     32.5000
+ Warning: no grid points on interval from    -117.2725     32.5000 to    -117.2700     32.5000
+ Warning: no grid points on interval from    -117.2700     32.5000 to    -117.2675     32.5000
+ Warning: no grid points on interval from    -117.2675     32.5000 to    -117.2650     32.5000
+ Warning: no grid points on interval from    -117.2650     32.5000 to    -117.2625     32.5000
+ Warning: no grid points on interval from    -117.2625     32.5000 to    -117.2600     32.5000
+ Warning: no grid points on interval from    -117.2600     32.5000 to    -117.2575     32.5000
+ Warning: no grid points on interval from    -117.2575     32.5000 to    -117.2550     32.5000
+ Warning: no grid points on interval from    -117.2550     32.5000 to    -117.2525     32.5000
+ Warning: no grid points on interval from    -117.2475     32.5000 to    -117.2450     32.5000
+ Warning: no grid points on interval from    -117.2450     32.5000 to    -117.2425     32.5000
+ Warning: no grid points on interval from    -117.2425     32.5000 to    -117.2400     32.5000
+ Warning: no grid points on interval from    -117.2400     32.5000 to    -117.2375     32.5000
+ Warning: no grid points on interval from    -117.2375     32.5000 to    -117.2350     32.5000
+ Warning: no grid points on interval from    -117.2350     32.5000 to    -117.2325     32.5000
+ Warning: no grid points on interval from    -117.2325     32.5000 to    -117.2300     32.5000
+ Warning: no grid points on interval from    -117.2300     32.5000 to    -117.2275     32.5000
+ Warning: no grid points on interval from    -117.2225     32.5000 to    -117.2200     32.5000
+ Warning: no grid points on interval from    -117.2200     32.5000 to    -117.2175     32.5000
+ Warning: no grid points on interval from    -117.2175     32.5000 to    -117.2150     32.5000
+ Warning: no grid points on interval from    -117.2150     32.5000 to    -117.2125     32.5000
+ Warning: no grid points on interval from    -117.2125     32.5000 to    -117.2100     32.5000
+ Warning: no grid points on interval from    -117.2100     32.5000 to    -117.2075     32.5000
+ Warning: no grid points on interval from    -117.2075     32.5000 to    -117.2050     32.5000
+ Warning: no grid points on interval from    -117.2050     32.5000 to    -117.2025     32.5000
+ Warning: no grid points on interval from    -117.1975     32.5000 to    -117.1950     32.5000
+ Warning: no grid points on interval from    -117.1950     32.5000 to    -117.1925     32.5000
+ Warning: no grid points on interval from    -117.1925     32.5000 to    -117.1900     32.5000
+ Warning: no grid points on interval from    -117.1900     32.5000 to    -117.1875     32.5000
+ Warning: no grid points on interval from    -117.1875     32.5000 to    -117.1850     32.5000
+ Warning: no grid points on interval from    -117.1850     32.5000 to    -117.1825     32.5000
+ Warning: no grid points on interval from    -117.1825     32.5000 to    -117.1800     32.5000
+ Warning: no grid points on interval from    -117.1800     32.5000 to    -117.1775     32.5000
+ Warning: no grid points on interval from    -117.1725     32.5000 to    -117.1700     32.5000
+ Warning: no grid points on interval from    -117.1700     32.5000 to    -117.1675     32.5000
+ Warning: no grid points on interval from    -117.1675     32.5000 to    -117.1650     32.5000
+ Warning: no grid points on interval from    -117.1650     32.5000 to    -117.1625     32.5000
+ Warning: no grid points on interval from    -117.1625     32.5000 to    -117.1600     32.5000
+ Warning: no grid points on interval from    -117.1600     32.5000 to    -117.1575     32.5000
+ Warning: no grid points on interval from    -117.1575     32.5000 to    -117.1550     32.5000
+ Warning: no grid points on interval from    -117.1550     32.5000 to    -117.1525     32.5000
+ Warning: no grid points on interval from    -117.1475     32.5000 to    -117.1450     32.5000
+ Warning: no grid points on interval from    -117.1450     32.5000 to    -117.1425     32.5000
+ Warning: no grid points on interval from    -117.1425     32.5000 to    -117.1400     32.5000
+ Warning: no grid points on interval from    -117.1400     32.5000 to    -117.1375     32.5000
+ Warning: no grid points on interval from    -117.1375     32.5000 to    -117.1350     32.5000
+ Warning: no grid points on interval from    -117.1350     32.5000 to    -117.1325     32.5000
+ Warning: no grid points on interval from    -117.1325     32.5000 to    -117.1300     32.5000
+ Warning: no grid points on interval from    -117.1300     32.5000 to    -117.1275     32.5000
+ Warning: no grid points on interval from    -117.1275     32.5000 to    -117.1250     32.5000
  Warning: no grid points on interval from    -117.1250     32.5000 to    -117.1225     32.5000
  Warning: no grid points on interval from    -117.1225     32.5000 to    -117.1200     32.5000
  Warning: no grid points on interval from    -117.1200     32.5000 to    -117.1175     32.5000
@@ -973,6 +1030,330 @@ Point with index (   256,    60) was removed from computational grid, because it
  Warning: no grid points on interval from    -117.7350     33.5000 to    -117.7375     33.5000
  Warning: no grid points on interval from    -117.7375     33.5000 to    -117.7400     33.5000
  Warning: no grid points on interval from    -117.7400     33.5000 to    -117.7425     33.5000
+ Warning: no grid points on interval from    -117.7425     33.5000 to    -117.7450     33.5000
+ Warning: no grid points on interval from    -117.7450     33.5000 to    -117.7475     33.5000
+ Warning: no grid points on interval from    -117.7475     33.5000 to    -117.7500     33.5000
+ Warning: no grid points on interval from    -117.7500     33.5000 to    -117.7500     33.4975
+ Warning: no grid points on interval from    -117.7500     33.4975 to    -117.7500     33.4950
+ Warning: no grid points on interval from    -117.7500     33.4950 to    -117.7500     33.4925
+ Warning: no grid points on interval from    -117.7500     33.4925 to    -117.7500     33.4900
+ Warning: no grid points on interval from    -117.7500     33.4900 to    -117.7500     33.4875
+ Warning: no grid points on interval from    -117.7500     33.4875 to    -117.7500     33.4850
+ Warning: no grid points on interval from    -117.7500     33.4850 to    -117.7500     33.4825
+ Warning: no grid points on interval from    -117.7500     33.4825 to    -117.7500     33.4800
+ Warning: no grid points on interval from    -117.7500     33.4800 to    -117.7500     33.4775
+ Warning: no grid points on interval from    -117.7500     33.4725 to    -117.7500     33.4700
+ Warning: no grid points on interval from    -117.7500     33.4700 to    -117.7500     33.4675
+ Warning: no grid points on interval from    -117.7500     33.4675 to    -117.7500     33.4650
+ Warning: no grid points on interval from    -117.7500     33.4650 to    -117.7500     33.4625
+ Warning: no grid points on interval from    -117.7500     33.4625 to    -117.7500     33.4600
+ Warning: no grid points on interval from    -117.7500     33.4600 to    -117.7500     33.4575
+ Warning: no grid points on interval from    -117.7500     33.4575 to    -117.7500     33.4550
+ Warning: no grid points on interval from    -117.7500     33.4550 to    -117.7500     33.4525
+ Warning: no grid points on interval from    -117.7500     33.4475 to    -117.7500     33.4450
+ Warning: no grid points on interval from    -117.7500     33.4450 to    -117.7500     33.4425
+ Warning: no grid points on interval from    -117.7500     33.4425 to    -117.7500     33.4400
+ Warning: no grid points on interval from    -117.7500     33.4400 to    -117.7500     33.4375
+ Warning: no grid points on interval from    -117.7500     33.4375 to    -117.7500     33.4350
+ Warning: no grid points on interval from    -117.7500     33.4350 to    -117.7500     33.4325
+ Warning: no grid points on interval from    -117.7500     33.4325 to    -117.7500     33.4300
+ Warning: no grid points on interval from    -117.7500     33.4300 to    -117.7500     33.4275
+ Warning: no grid points on interval from    -117.7500     33.4225 to    -117.7500     33.4200
+ Warning: no grid points on interval from    -117.7500     33.4200 to    -117.7500     33.4175
+ Warning: no grid points on interval from    -117.7500     33.4175 to    -117.7500     33.4150
+ Warning: no grid points on interval from    -117.7500     33.4150 to    -117.7500     33.4125
+ Warning: no grid points on interval from    -117.7500     33.4125 to    -117.7500     33.4100
+ Warning: no grid points on interval from    -117.7500     33.4100 to    -117.7500     33.4075
+ Warning: no grid points on interval from    -117.7500     33.4075 to    -117.7500     33.4050
+ Warning: no grid points on interval from    -117.7500     33.4050 to    -117.7500     33.4025
+ Warning: no grid points on interval from    -117.7500     33.3975 to    -117.7500     33.3950
+ Warning: no grid points on interval from    -117.7500     33.3950 to    -117.7500     33.3925
+ Warning: no grid points on interval from    -117.7500     33.3925 to    -117.7500     33.3900
+ Warning: no grid points on interval from    -117.7500     33.3900 to    -117.7500     33.3875
+ Warning: no grid points on interval from    -117.7500     33.3875 to    -117.7500     33.3850
+ Warning: no grid points on interval from    -117.7500     33.3850 to    -117.7500     33.3825
+ Warning: no grid points on interval from    -117.7500     33.3825 to    -117.7500     33.3800
+ Warning: no grid points on interval from    -117.7500     33.3800 to    -117.7500     33.3775
+ Warning: no grid points on interval from    -117.7500     33.3725 to    -117.7500     33.3700
+ Warning: no grid points on interval from    -117.7500     33.3700 to    -117.7500     33.3675
+ Warning: no grid points on interval from    -117.7500     33.3675 to    -117.7500     33.3650
+ Warning: no grid points on interval from    -117.7500     33.3650 to    -117.7500     33.3625
+ Warning: no grid points on interval from    -117.7500     33.3625 to    -117.7500     33.3600
+ Warning: no grid points on interval from    -117.7500     33.3600 to    -117.7500     33.3575
+ Warning: no grid points on interval from    -117.7500     33.3575 to    -117.7500     33.3550
+ Warning: no grid points on interval from    -117.7500     33.3550 to    -117.7500     33.3525
+ Warning: no grid points on interval from    -117.7500     33.3475 to    -117.7500     33.3450
+ Warning: no grid points on interval from    -117.7500     33.3450 to    -117.7500     33.3425
+ Warning: no grid points on interval from    -117.7500     33.3425 to    -117.7500     33.3400
+ Warning: no grid points on interval from    -117.7500     33.3400 to    -117.7500     33.3375
+ Warning: no grid points on interval from    -117.7500     33.3375 to    -117.7500     33.3350
+ Warning: no grid points on interval from    -117.7500     33.3350 to    -117.7500     33.3325
+ Warning: no grid points on interval from    -117.7500     33.3325 to    -117.7500     33.3300
+ Warning: no grid points on interval from    -117.7500     33.3300 to    -117.7500     33.3275
+ Warning: no grid points on interval from    -117.7500     33.3225 to    -117.7500     33.3200
+ Warning: no grid points on interval from    -117.7500     33.3200 to    -117.7500     33.3175
+ Warning: no grid points on interval from    -117.7500     33.3175 to    -117.7500     33.3150
+ Warning: no grid points on interval from    -117.7500     33.3150 to    -117.7500     33.3125
+ Warning: no grid points on interval from    -117.7500     33.3125 to    -117.7500     33.3100
+ Warning: no grid points on interval from    -117.7500     33.3100 to    -117.7500     33.3075
+ Warning: no grid points on interval from    -117.7500     33.3075 to    -117.7500     33.3050
+ Warning: no grid points on interval from    -117.7500     33.3050 to    -117.7500     33.3025
+ Warning: no grid points on interval from    -117.7500     33.2975 to    -117.7500     33.2950
+ Warning: no grid points on interval from    -117.7500     33.2950 to    -117.7500     33.2925
+ Warning: no grid points on interval from    -117.7500     33.2925 to    -117.7500     33.2900
+ Warning: no grid points on interval from    -117.7500     33.2900 to    -117.7500     33.2875
+ Warning: no grid points on interval from    -117.7500     33.2875 to    -117.7500     33.2850
+ Warning: no grid points on interval from    -117.7500     33.2850 to    -117.7500     33.2825
+ Warning: no grid points on interval from    -117.7500     33.2825 to    -117.7500     33.2800
+ Warning: no grid points on interval from    -117.7500     33.2800 to    -117.7500     33.2775
+ Warning: no grid points on interval from    -117.7500     33.2725 to    -117.7500     33.2700
+ Warning: no grid points on interval from    -117.7500     33.2700 to    -117.7500     33.2675
+ Warning: no grid points on interval from    -117.7500     33.2675 to    -117.7500     33.2650
+ Warning: no grid points on interval from    -117.7500     33.2650 to    -117.7500     33.2625
+ Warning: no grid points on interval from    -117.7500     33.2625 to    -117.7500     33.2600
+ Warning: no grid points on interval from    -117.7500     33.2600 to    -117.7500     33.2575
+ Warning: no grid points on interval from    -117.7500     33.2575 to    -117.7500     33.2550
+ Warning: no grid points on interval from    -117.7500     33.2550 to    -117.7500     33.2525
+ Warning: no grid points on interval from    -117.7500     33.2475 to    -117.7500     33.2450
+ Warning: no grid points on interval from    -117.7500     33.2450 to    -117.7500     33.2425
+ Warning: no grid points on interval from    -117.7500     33.2425 to    -117.7500     33.2400
+ Warning: no grid points on interval from    -117.7500     33.2400 to    -117.7500     33.2375
+ Warning: no grid points on interval from    -117.7500     33.2375 to    -117.7500     33.2350
+ Warning: no grid points on interval from    -117.7500     33.2350 to    -117.7500     33.2325
+ Warning: no grid points on interval from    -117.7500     33.2325 to    -117.7500     33.2300
+ Warning: no grid points on interval from    -117.7500     33.2300 to    -117.7500     33.2275
+ Warning: no grid points on interval from    -117.7500     33.2225 to    -117.7500     33.2200
+ Warning: no grid points on interval from    -117.7500     33.2200 to    -117.7500     33.2175
+ Warning: no grid points on interval from    -117.7500     33.2175 to    -117.7500     33.2150
+ Warning: no grid points on interval from    -117.7500     33.2150 to    -117.7500     33.2125
+ Warning: no grid points on interval from    -117.7500     33.2125 to    -117.7500     33.2100
+ Warning: no grid points on interval from    -117.7500     33.2100 to    -117.7500     33.2075
+ Warning: no grid points on interval from    -117.7500     33.2075 to    -117.7500     33.2050
+ Warning: no grid points on interval from    -117.7500     33.2050 to    -117.7500     33.2025
+ Warning: no grid points on interval from    -117.7500     33.1975 to    -117.7500     33.1950
+ Warning: no grid points on interval from    -117.7500     33.1950 to    -117.7500     33.1925
+ Warning: no grid points on interval from    -117.7500     33.1925 to    -117.7500     33.1900
+ Warning: no grid points on interval from    -117.7500     33.1900 to    -117.7500     33.1875
+ Warning: no grid points on interval from    -117.7500     33.1875 to    -117.7500     33.1850
+ Warning: no grid points on interval from    -117.7500     33.1850 to    -117.7500     33.1825
+ Warning: no grid points on interval from    -117.7500     33.1825 to    -117.7500     33.1800
+ Warning: no grid points on interval from    -117.7500     33.1800 to    -117.7500     33.1775
+ Warning: no grid points on interval from    -117.7500     33.1725 to    -117.7500     33.1700
+ Warning: no grid points on interval from    -117.7500     33.1700 to    -117.7500     33.1675
+ Warning: no grid points on interval from    -117.7500     33.1675 to    -117.7500     33.1650
+ Warning: no grid points on interval from    -117.7500     33.1650 to    -117.7500     33.1625
+ Warning: no grid points on interval from    -117.7500     33.1625 to    -117.7500     33.1600
+ Warning: no grid points on interval from    -117.7500     33.1600 to    -117.7500     33.1575
+ Warning: no grid points on interval from    -117.7500     33.1575 to    -117.7500     33.1550
+ Warning: no grid points on interval from    -117.7500     33.1550 to    -117.7500     33.1525
+ Warning: no grid points on interval from    -117.7500     33.1475 to    -117.7500     33.1450
+ Warning: no grid points on interval from    -117.7500     33.1450 to    -117.7500     33.1425
+ Warning: no grid points on interval from    -117.7500     33.1425 to    -117.7500     33.1400
+ Warning: no grid points on interval from    -117.7500     33.1400 to    -117.7500     33.1375
+ Warning: no grid points on interval from    -117.7500     33.1375 to    -117.7500     33.1350
+ Warning: no grid points on interval from    -117.7500     33.1350 to    -117.7500     33.1325
+ Warning: no grid points on interval from    -117.7500     33.1325 to    -117.7500     33.1300
+ Warning: no grid points on interval from    -117.7500     33.1300 to    -117.7500     33.1275
+ Warning: no grid points on interval from    -117.7500     33.1225 to    -117.7500     33.1200
+ Warning: no grid points on interval from    -117.7500     33.1200 to    -117.7500     33.1175
+ Warning: no grid points on interval from    -117.7500     33.1175 to    -117.7500     33.1150
+ Warning: no grid points on interval from    -117.7500     33.1150 to    -117.7500     33.1125
+ Warning: no grid points on interval from    -117.7500     33.1125 to    -117.7500     33.1100
+ Warning: no grid points on interval from    -117.7500     33.1100 to    -117.7500     33.1075
+ Warning: no grid points on interval from    -117.7500     33.1075 to    -117.7500     33.1050
+ Warning: no grid points on interval from    -117.7500     33.1050 to    -117.7500     33.1025
+ Warning: no grid points on interval from    -117.7500     33.0975 to    -117.7500     33.0950
+ Warning: no grid points on interval from    -117.7500     33.0950 to    -117.7500     33.0925
+ Warning: no grid points on interval from    -117.7500     33.0925 to    -117.7500     33.0900
+ Warning: no grid points on interval from    -117.7500     33.0900 to    -117.7500     33.0875
+ Warning: no grid points on interval from    -117.7500     33.0875 to    -117.7500     33.0850
+ Warning: no grid points on interval from    -117.7500     33.0850 to    -117.7500     33.0825
+ Warning: no grid points on interval from    -117.7500     33.0825 to    -117.7500     33.0800
+ Warning: no grid points on interval from    -117.7500     33.0800 to    -117.7500     33.0775
+ Warning: no grid points on interval from    -117.7500     33.0725 to    -117.7500     33.0700
+ Warning: no grid points on interval from    -117.7500     33.0700 to    -117.7500     33.0675
+ Warning: no grid points on interval from    -117.7500     33.0675 to    -117.7500     33.0650
+ Warning: no grid points on interval from    -117.7500     33.0650 to    -117.7500     33.0625
+ Warning: no grid points on interval from    -117.7500     33.0625 to    -117.7500     33.0600
+ Warning: no grid points on interval from    -117.7500     33.0600 to    -117.7500     33.0575
+ Warning: no grid points on interval from    -117.7500     33.0575 to    -117.7500     33.0550
+ Warning: no grid points on interval from    -117.7500     33.0550 to    -117.7500     33.0525
+ Warning: no grid points on interval from    -117.7500     33.0475 to    -117.7500     33.0450
+ Warning: no grid points on interval from    -117.7500     33.0450 to    -117.7500     33.0425
+ Warning: no grid points on interval from    -117.7500     33.0425 to    -117.7500     33.0400
+ Warning: no grid points on interval from    -117.7500     33.0400 to    -117.7500     33.0375
+ Warning: no grid points on interval from    -117.7500     33.0375 to    -117.7500     33.0350
+ Warning: no grid points on interval from    -117.7500     33.0350 to    -117.7500     33.0325
+ Warning: no grid points on interval from    -117.7500     33.0325 to    -117.7500     33.0300
+ Warning: no grid points on interval from    -117.7500     33.0300 to    -117.7500     33.0275
+ Warning: no grid points on interval from    -117.7500     33.0225 to    -117.7500     33.0200
+ Warning: no grid points on interval from    -117.7500     33.0200 to    -117.7500     33.0175
+ Warning: no grid points on interval from    -117.7500     33.0175 to    -117.7500     33.0150
+ Warning: no grid points on interval from    -117.7500     33.0150 to    -117.7500     33.0125
+ Warning: no grid points on interval from    -117.7500     33.0125 to    -117.7500     33.0100
+ Warning: no grid points on interval from    -117.7500     33.0100 to    -117.7500     33.0075
+ Warning: no grid points on interval from    -117.7500     33.0075 to    -117.7500     33.0050
+ Warning: no grid points on interval from    -117.7500     33.0050 to    -117.7500     33.0025
+ Warning: no grid points on interval from    -117.7500     32.9975 to    -117.7500     32.9950
+ Warning: no grid points on interval from    -117.7500     32.9950 to    -117.7500     32.9925
+ Warning: no grid points on interval from    -117.7500     32.9925 to    -117.7500     32.9900
+ Warning: no grid points on interval from    -117.7500     32.9900 to    -117.7500     32.9875
+ Warning: no grid points on interval from    -117.7500     32.9875 to    -117.7500     32.9850
+ Warning: no grid points on interval from    -117.7500     32.9850 to    -117.7500     32.9825
+ Warning: no grid points on interval from    -117.7500     32.9825 to    -117.7500     32.9800
+ Warning: no grid points on interval from    -117.7500     32.9800 to    -117.7500     32.9775
+ Warning: no grid points on interval from    -117.7500     32.9725 to    -117.7500     32.9700
+ Warning: no grid points on interval from    -117.7500     32.9700 to    -117.7500     32.9675
+ Warning: no grid points on interval from    -117.7500     32.9675 to    -117.7500     32.9650
+ Warning: no grid points on interval from    -117.7500     32.9650 to    -117.7500     32.9625
+ Warning: no grid points on interval from    -117.7500     32.9625 to    -117.7500     32.9600
+ Warning: no grid points on interval from    -117.7500     32.9600 to    -117.7500     32.9575
+ Warning: no grid points on interval from    -117.7500     32.9575 to    -117.7500     32.9550
+ Warning: no grid points on interval from    -117.7500     32.9550 to    -117.7500     32.9525
+ Warning: no grid points on interval from    -117.7500     32.9475 to    -117.7500     32.9450
+ Warning: no grid points on interval from    -117.7500     32.9450 to    -117.7500     32.9425
+ Warning: no grid points on interval from    -117.7500     32.9425 to    -117.7500     32.9400
+ Warning: no grid points on interval from    -117.7500     32.9400 to    -117.7500     32.9375
+ Warning: no grid points on interval from    -117.7500     32.9375 to    -117.7500     32.9350
+ Warning: no grid points on interval from    -117.7500     32.9350 to    -117.7500     32.9325
+ Warning: no grid points on interval from    -117.7500     32.9325 to    -117.7500     32.9300
+ Warning: no grid points on interval from    -117.7500     32.9300 to    -117.7500     32.9275
+ Warning: no grid points on interval from    -117.7500     32.9225 to    -117.7500     32.9200
+ Warning: no grid points on interval from    -117.7500     32.9200 to    -117.7500     32.9175
+ Warning: no grid points on interval from    -117.7500     32.9175 to    -117.7500     32.9150
+ Warning: no grid points on interval from    -117.7500     32.9150 to    -117.7500     32.9125
+ Warning: no grid points on interval from    -117.7500     32.9125 to    -117.7500     32.9100
+ Warning: no grid points on interval from    -117.7500     32.9100 to    -117.7500     32.9075
+ Warning: no grid points on interval from    -117.7500     32.9075 to    -117.7500     32.9050
+ Warning: no grid points on interval from    -117.7500     32.9050 to    -117.7500     32.9025
+ Warning: no grid points on interval from    -117.7500     32.8975 to    -117.7500     32.8950
+ Warning: no grid points on interval from    -117.7500     32.8950 to    -117.7500     32.8925
+ Warning: no grid points on interval from    -117.7500     32.8925 to    -117.7500     32.8900
+ Warning: no grid points on interval from    -117.7500     32.8900 to    -117.7500     32.8875
+ Warning: no grid points on interval from    -117.7500     32.8875 to    -117.7500     32.8850
+ Warning: no grid points on interval from    -117.7500     32.8850 to    -117.7500     32.8825
+ Warning: no grid points on interval from    -117.7500     32.8825 to    -117.7500     32.8800
+ Warning: no grid points on interval from    -117.7500     32.8800 to    -117.7500     32.8775
+ Warning: no grid points on interval from    -117.7500     32.8725 to    -117.7500     32.8700
+ Warning: no grid points on interval from    -117.7500     32.8700 to    -117.7500     32.8675
+ Warning: no grid points on interval from    -117.7500     32.8675 to    -117.7500     32.8650
+ Warning: no grid points on interval from    -117.7500     32.8650 to    -117.7500     32.8625
+ Warning: no grid points on interval from    -117.7500     32.8625 to    -117.7500     32.8600
+ Warning: no grid points on interval from    -117.7500     32.8600 to    -117.7500     32.8575
+ Warning: no grid points on interval from    -117.7500     32.8575 to    -117.7500     32.8550
+ Warning: no grid points on interval from    -117.7500     32.8550 to    -117.7500     32.8525
+ Warning: no grid points on interval from    -117.7500     32.8475 to    -117.7500     32.8450
+ Warning: no grid points on interval from    -117.7500     32.8450 to    -117.7500     32.8425
+ Warning: no grid points on interval from    -117.7500     32.8425 to    -117.7500     32.8400
+ Warning: no grid points on interval from    -117.7500     32.8400 to    -117.7500     32.8375
+ Warning: no grid points on interval from    -117.7500     32.8375 to    -117.7500     32.8350
+ Warning: no grid points on interval from    -117.7500     32.8350 to    -117.7500     32.8325
+ Warning: no grid points on interval from    -117.7500     32.8325 to    -117.7500     32.8300
+ Warning: no grid points on interval from    -117.7500     32.8300 to    -117.7500     32.8275
+ Warning: no grid points on interval from    -117.7500     32.8225 to    -117.7500     32.8200
+ Warning: no grid points on interval from    -117.7500     32.8200 to    -117.7500     32.8175
+ Warning: no grid points on interval from    -117.7500     32.8175 to    -117.7500     32.8150
+ Warning: no grid points on interval from    -117.7500     32.8150 to    -117.7500     32.8125
+ Warning: no grid points on interval from    -117.7500     32.8125 to    -117.7500     32.8100
+ Warning: no grid points on interval from    -117.7500     32.8100 to    -117.7500     32.8075
+ Warning: no grid points on interval from    -117.7500     32.8075 to    -117.7500     32.8050
+ Warning: no grid points on interval from    -117.7500     32.8050 to    -117.7500     32.8025
+ Warning: no grid points on interval from    -117.7500     32.7975 to    -117.7500     32.7950
+ Warning: no grid points on interval from    -117.7500     32.7950 to    -117.7500     32.7925
+ Warning: no grid points on interval from    -117.7500     32.7925 to    -117.7500     32.7900
+ Warning: no grid points on interval from    -117.7500     32.7900 to    -117.7500     32.7875
+ Warning: no grid points on interval from    -117.7500     32.7875 to    -117.7500     32.7850
+ Warning: no grid points on interval from    -117.7500     32.7850 to    -117.7500     32.7825
+ Warning: no grid points on interval from    -117.7500     32.7825 to    -117.7500     32.7800
+ Warning: no grid points on interval from    -117.7500     32.7800 to    -117.7500     32.7775
+ Warning: no grid points on interval from    -117.7500     32.7725 to    -117.7500     32.7700
+ Warning: no grid points on interval from    -117.7500     32.7700 to    -117.7500     32.7675
+ Warning: no grid points on interval from    -117.7500     32.7675 to    -117.7500     32.7650
+ Warning: no grid points on interval from    -117.7500     32.7650 to    -117.7500     32.7625
+ Warning: no grid points on interval from    -117.7500     32.7625 to    -117.7500     32.7600
+ Warning: no grid points on interval from    -117.7500     32.7600 to    -117.7500     32.7575
+ Warning: no grid points on interval from    -117.7500     32.7575 to    -117.7500     32.7550
+ Warning: no grid points on interval from    -117.7500     32.7550 to    -117.7500     32.7525
+ Warning: no grid points on interval from    -117.7500     32.7475 to    -117.7500     32.7450
+ Warning: no grid points on interval from    -117.7500     32.7450 to    -117.7500     32.7425
+ Warning: no grid points on interval from    -117.7500     32.7425 to    -117.7500     32.7400
+ Warning: no grid points on interval from    -117.7500     32.7400 to    -117.7500     32.7375
+ Warning: no grid points on interval from    -117.7500     32.7375 to    -117.7500     32.7350
+ Warning: no grid points on interval from    -117.7500     32.7350 to    -117.7500     32.7325
+ Warning: no grid points on interval from    -117.7500     32.7325 to    -117.7500     32.7300
+ Warning: no grid points on interval from    -117.7500     32.7300 to    -117.7500     32.7275
+ Warning: no grid points on interval from    -117.7500     32.7225 to    -117.7500     32.7200
+ Warning: no grid points on interval from    -117.7500     32.7200 to    -117.7500     32.7175
+ Warning: no grid points on interval from    -117.7500     32.7175 to    -117.7500     32.7150
+ Warning: no grid points on interval from    -117.7500     32.7150 to    -117.7500     32.7125
+ Warning: no grid points on interval from    -117.7500     32.7125 to    -117.7500     32.7100
+ Warning: no grid points on interval from    -117.7500     32.7100 to    -117.7500     32.7075
+ Warning: no grid points on interval from    -117.7500     32.7075 to    -117.7500     32.7050
+ Warning: no grid points on interval from    -117.7500     32.7050 to    -117.7500     32.7025
+ Warning: no grid points on interval from    -117.7500     32.6975 to    -117.7500     32.6950
+ Warning: no grid points on interval from    -117.7500     32.6950 to    -117.7500     32.6925
+ Warning: no grid points on interval from    -117.7500     32.6925 to    -117.7500     32.6900
+ Warning: no grid points on interval from    -117.7500     32.6900 to    -117.7500     32.6875
+ Warning: no grid points on interval from    -117.7500     32.6875 to    -117.7500     32.6850
+ Warning: no grid points on interval from    -117.7500     32.6850 to    -117.7500     32.6825
+ Warning: no grid points on interval from    -117.7500     32.6825 to    -117.7500     32.6800
+ Warning: no grid points on interval from    -117.7500     32.6800 to    -117.7500     32.6775
+ Warning: no grid points on interval from    -117.7500     32.6725 to    -117.7500     32.6700
+ Warning: no grid points on interval from    -117.7500     32.6700 to    -117.7500     32.6675
+ Warning: no grid points on interval from    -117.7500     32.6675 to    -117.7500     32.6650
+ Warning: no grid points on interval from    -117.7500     32.6650 to    -117.7500     32.6625
+ Warning: no grid points on interval from    -117.7500     32.6625 to    -117.7500     32.6600
+ Warning: no grid points on interval from    -117.7500     32.6600 to    -117.7500     32.6575
+ Warning: no grid points on interval from    -117.7500     32.6575 to    -117.7500     32.6550
+ Warning: no grid points on interval from    -117.7500     32.6550 to    -117.7500     32.6525
+ Warning: no grid points on interval from    -117.7500     32.6475 to    -117.7500     32.6450
+ Warning: no grid points on interval from    -117.7500     32.6450 to    -117.7500     32.6425
+ Warning: no grid points on interval from    -117.7500     32.6425 to    -117.7500     32.6400
+ Warning: no grid points on interval from    -117.7500     32.6400 to    -117.7500     32.6375
+ Warning: no grid points on interval from    -117.7500     32.6375 to    -117.7500     32.6350
+ Warning: no grid points on interval from    -117.7500     32.6350 to    -117.7500     32.6325
+ Warning: no grid points on interval from    -117.7500     32.6325 to    -117.7500     32.6300
+ Warning: no grid points on interval from    -117.7500     32.6300 to    -117.7500     32.6275
+ Warning: no grid points on interval from    -117.7500     32.6225 to    -117.7500     32.6200
+ Warning: no grid points on interval from    -117.7500     32.6200 to    -117.7500     32.6175
+ Warning: no grid points on interval from    -117.7500     32.6175 to    -117.7500     32.6150
+ Warning: no grid points on interval from    -117.7500     32.6150 to    -117.7500     32.6125
+ Warning: no grid points on interval from    -117.7500     32.6125 to    -117.7500     32.6100
+ Warning: no grid points on interval from    -117.7500     32.6100 to    -117.7500     32.6075
+ Warning: no grid points on interval from    -117.7500     32.6075 to    -117.7500     32.6050
+ Warning: no grid points on interval from    -117.7500     32.6050 to    -117.7500     32.6025
+ Warning: no grid points on interval from    -117.7500     32.5975 to    -117.7500     32.5950
+ Warning: no grid points on interval from    -117.7500     32.5950 to    -117.7500     32.5925
+ Warning: no grid points on interval from    -117.7500     32.5925 to    -117.7500     32.5900
+ Warning: no grid points on interval from    -117.7500     32.5900 to    -117.7500     32.5875
+ Warning: no grid points on interval from    -117.7500     32.5875 to    -117.7500     32.5850
+ Warning: no grid points on interval from    -117.7500     32.5850 to    -117.7500     32.5825
+ Warning: no grid points on interval from    -117.7500     32.5825 to    -117.7500     32.5800
+ Warning: no grid points on interval from    -117.7500     32.5800 to    -117.7500     32.5775
+ Warning: no grid points on interval from    -117.7500     32.5725 to    -117.7500     32.5700
+ Warning: no grid points on interval from    -117.7500     32.5700 to    -117.7500     32.5675
+ Warning: no grid points on interval from    -117.7500     32.5675 to    -117.7500     32.5650
+ Warning: no grid points on interval from    -117.7500     32.5650 to    -117.7500     32.5625
+ Warning: no grid points on interval from    -117.7500     32.5625 to    -117.7500     32.5600
+ Warning: no grid points on interval from    -117.7500     32.5600 to    -117.7500     32.5575
+ Warning: no grid points on interval from    -117.7500     32.5575 to    -117.7500     32.5550
+ Warning: no grid points on interval from    -117.7500     32.5550 to    -117.7500     32.5525
+ Warning: no grid points on interval from    -117.7500     32.5475 to    -117.7500     32.5450
+ Warning: no grid points on interval from    -117.7500     32.5450 to    -117.7500     32.5425
+ Warning: no grid points on interval from    -117.7500     32.5425 to    -117.7500     32.5400
+ Warning: no grid points on interval from    -117.7500     32.5400 to    -117.7500     32.5375
+ Warning: no grid points on interval from    -117.7500     32.5375 to    -117.7500     32.5350
+ Warning: no grid points on interval from    -117.7500     32.5350 to    -117.7500     32.5325
+ Warning: no grid points on interval from    -117.7500     32.5325 to    -117.7500     32.5300
+ Warning: no grid points on interval from    -117.7500     32.5300 to    -117.7500     32.5275
+ Warning: no grid points on interval from    -117.7500     32.5225 to    -117.7500     32.5200
+ Warning: no grid points on interval from    -117.7500     32.5200 to    -117.7500     32.5175
+ Warning: no grid points on interval from    -117.7500     32.5175 to    -117.7500     32.5150
+ Warning: no grid points on interval from    -117.7500     32.5150 to    -117.7500     32.5125
+ Warning: no grid points on interval from    -117.7500     32.5125 to    -117.7500     32.5100
+ Warning: no grid points on interval from    -117.7500     32.5100 to    -117.7500     32.5075
+ Warning: no grid points on interval from    -117.7500     32.5075 to    -117.7500     32.5050
+ Warning: no grid points on interval from    -117.7500     32.5050 to    -117.7500     32.5025
     
  !
     
@@ -986,9 +1367,9 @@ Point with index (   256,    60) was removed from computational grid, because it
     
  !generate binary Matlab-file for block-output
     
- BLOCK  'COMPGRID' NOHEAD '.\output\HsSD.txt' LAYOUT 3 HS
+ BLOCK  'COMPGRID' NOHEAD 'HsSD.txt' LAYOUT 3 HS
     
- BLOCK  'COMPGRID' NOHEAD '.\output\DirSD.txt' LAYOUT 3 DIR
+ BLOCK  'COMPGRID' NOHEAD 'DirSD.txt' LAYOUT 3 DIR
     
  !
     
@@ -1000,8 +1381,8 @@ Point with index (   256,    60) was removed from computational grid, because it
                   COMPUTATIONAL PART OF SWAN
 ----------------------------------------------------------------
 
- Gridresolution       : MXC             301 MYC            401
-                      : MCGRD         67256
+ Gridresolution       : MXC              31 MYC             41
+                      : MCGRD           692
                       : MSC              32 MDC             36
                       : MTC               1
                       : NSTATC            0 ITERMX          50
@@ -1011,7 +1392,7 @@ Point with index (   256,    60) was removed from computational grid, because it
                       : ITRIAD            0 IQUAD            2
                       : IVEG              0 ITURBV           0
                       : IMUD              0
- Spatial step         : DX       0.2500E-02 DY      0.2500E-02
+ Spatial step         : DX       0.2500E-01 DY      0.2500E-01
  Spectral bin         : df/f     0.1000E+00 DDIR    0.1000E+02
  Physical constants   : GRAV     0.9810E+01 RHO     0.1025E+04
  Wind input           : WSPEED   0.1000E+01 DIR     0.1800E+03
@@ -1023,7 +1404,7 @@ Point with index (   256,    60) was removed from computational grid, because it
  Drying/flooding      : LEVEL    0.0000E+00 DEPMIN  0.5000E-01
  The Cartesian convention for wind and wave directions is used
  Scheme for geographic propagation is SORDUP
- Scheme geogr. space  : PROPSC            2 ICMAX            7
+ Scheme geogr. space  : PROPSC            2 ICMAX            5
  Scheme spectral space: CSS      0.5000E+00 CDD     0.5000E+00
  Current is off
  Quadruplets          : IQUAD             2
@@ -1036,18 +1417,14 @@ Point with index (   256,    60) was removed from computational grid, because it
  Vegetation is off
  Turbulence is off
  Fluid mud is off
- W-cap Komen (`84)    : EMPCOF (CDS2):   0.2360E-04
- W-cap Komen (`84)    : APM (STPM)   :   0.3020E-02
- W-cap Komen (`84)    : POWST        :   0.2000E+01
- W-cap Komen (`84)    : DELTA        :   0.1000E+01
- W-cap Komen (`84)    : POWK         :   0.1000E+01
- Snyder/Komen wind input
+ W-cap Komen (`84)    : EMPCOF   0.2360E-04 APM     0.3020E-02
+                      : DELTA    0.1000E+01
  Battjes&Janssen (`78): ALPHA    0.1000E+01 GAMMA   0.7300E+00
  Set-up is off
  Diffraction is off
  Janssen (`89,`90)    : ALPHA    0.1000E-01 KAPPA   0.4100E+00
  Janssen (`89,`90)    : RHOA     0.1280E+01 RHOW    0.1025E+04
- 
+
  1st and 2nd gen. wind: CF10     0.1880E+03 CF20    0.5900E+00
                       : CF30     0.1200E+00 CF40    0.2500E+03
                       : CF50     0.2300E-02 CF60   -0.2230E+00
@@ -1055,7 +1432,7 @@ Point with index (   256,    60) was removed from computational grid, because it
                       : RHOAW    0.1249E-02 EDMLPM  0.3600E-02
                       : CDRAG    0.1230E-02 UMIN    0.1000E+01
                       : LIM_PM   0.1300E+00
- 
+
   ---------------------------------------------------------------
   First guess by 2nd generation model flags for first iteration:
   ITER       1 GRWMX      0.1000E+23 ALFA       0.0000E+00
@@ -1080,39 +1457,26 @@ Point with index (   256,    60) was removed from computational grid, because it
  iteration    2; sweep 2
  iteration    2; sweep 3
  iteration    2; sweep 4
- accuracy OK in  89.13 % of wet grid points ( 99.50 % required)
+ accuracy OK in  89.28 % of wet grid points ( 99.50 % required)
 
  iteration    3; sweep 1
  iteration    3; sweep 2
  iteration    3; sweep 3
  iteration    3; sweep 4
- accuracy OK in   1.30 % of wet grid points ( 99.50 % required)
+ accuracy OK in   8.26 % of wet grid points ( 99.50 % required)
 
  iteration    4; sweep 1
  iteration    4; sweep 2
  iteration    4; sweep 3
  iteration    4; sweep 4
- accuracy OK in  90.09 % of wet grid points ( 99.50 % required)
+ accuracy OK in  98.55 % of wet grid points ( 99.50 % required)
 
  iteration    5; sweep 1
  iteration    5; sweep 2
  iteration    5; sweep 3
  iteration    5; sweep 4
- accuracy OK in  95.54 % of wet grid points ( 99.50 % required)
+ accuracy OK in 100.00 % of wet grid points ( 99.50 % required)
 
- iteration    6; sweep 1
- iteration    6; sweep 2
- iteration    6; sweep 3
- iteration    6; sweep 4
- accuracy OK in  99.87 % of wet grid points ( 99.50 % required)
 
-  ** WARNING : Differences in wave height at the boundary
- Relative difference between input and computation >=   0.10
-                         Hs[m]      Hs[m]      Hs[-]
-     ix    iy  index   (input) (computed) (relative)
-  --------------------------------------------------
-   248     1  66924       0.23       0.21       0.12
-   250     1  67026       0.23       0.00       1.00
- 
     
  STOP

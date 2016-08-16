@@ -1,6 +1,6 @@
 1
 
-                    Execution started at 20160815.171046         
+                    Execution started at 20160815.185512         
 
 
 
@@ -19,5 +19,170 @@
     
  INPGRID BOTTOM -121 32 0. 239 179  .0167 .0167 EXC -99.
     
- READINP BOTTOM 1. '.\inputs\SoCal_low.txt' 1 0 FREE
- ** Terminating error: File cannot be opened/does not exist: .\inputs\SoCal_low.txt                                                          
+ READINP BOTTOM 1. 'SoCal_low.txt' 1 0 FREE
+    
+ BOU SHAP JON 3.3 PEAK DSPR DEGR
+    
+ WIND 0.1 180
+    
+ BOU SIDE W CCW CON FILE 'specSWANfile.txt'
+    
+ GEN3
+    
+ FRICTION
+    
+ TRIADS
+    
+ NGRID 'SB' -120.5  33.75   0. 1.5 .75 600 300
+    
+ NESTOUT 'SB' 'nestSB'
+    
+ NGRID 'LA'  -119.25  33.5 0.  1 .75 400 300
+    
+ NESTOUT 'LA' 'nestLA'
+    
+ NGRID 'OC'  -118.5 33.25  0.  1.0 .5  400 200
+    
+ NESTOUT 'OC' 'nestOC'
+    
+ NGRID 'SD'  -117.75 32.5  0.  0.75 1 300 400
+    
+ NESTOUT 'SD' 'nestSD'
+    
+ BLOCK  'COMPGRID' NOHEAD 'HsCA.txt' LAYOUT 3 HS
+    
+ BLOCK  'COMPGRID' NOHEAD 'DirCA.txt' LAYOUT 3 DIR
+    
+ TEST 1,0
+    
+ COMPUTE
+
+----------------------------------------------------------------
+                  COMPUTATIONAL PART OF SWAN
+----------------------------------------------------------------
+
+ Gridresolution       : MXC              25 MYC             19
+                      : MCGRD           313
+                      : MSC              32 MDC             36
+                      : MTC               1
+                      : NSTATC            0 ITERMX          50
+ Propagation flags    : ITFRE             1 IREFR            1
+ Source term flags    : IBOT              1 ISURF            1
+                      : IWCAP             1 IWIND            3
+                      : ITRIAD            1 IQUAD            2
+                      : IVEG              0 ITURBV           0
+                      : IMUD              0
+ Spatial step         : DX       0.1667E+00 DY      0.1667E+00
+ Spectral bin         : df/f     0.1000E+00 DDIR    0.1000E+02
+ Physical constants   : GRAV     0.9810E+01 RHO     0.1025E+04
+ Wind input           : WSPEED   0.1000E+00 DIR     0.1800E+03
+ Tail parameters      : E(f)     0.4000E+01 E(k)    0.2500E+01
+                      : A(f)     0.5000E+01 A(k)    0.3000E+01
+ Accuracy parameters  : DREL     0.1000E-01 NPNTS   0.9950E+02
+                      : DHABS    0.5000E-02 CURVAT  0.5000E-02
+                      : GRWMX    0.1000E+00
+ Drying/flooding      : LEVEL    0.0000E+00 DEPMIN  0.5000E-01
+ The Cartesian convention for wind and wave directions is used
+ Scheme for geographic propagation is SORDUP
+ Scheme geogr. space  : PROPSC            2 ICMAX            5
+ Scheme spectral space: CSS      0.5000E+00 CDD     0.5000E+00
+ Current is off
+ Quadruplets          : IQUAD             2
+                      : LAMBDA   0.2500E+00 CNL4    0.3000E+08
+                      : CSH1     0.5500E+01 CSH2    0.8330E+00
+                      : CSH3    -0.1250E+01
+ Maximum Ursell nr for Snl4 :    0.1000E+02
+ Triads               : ITRIAD            1 TRFAC   0.6500E+00
+                      : CUTFR    0.2500E+01 URCRI   0.2000E+00
+ Minimum Ursell nr for Snl3 :    0.1000E-01
+ JONSWAP (`73)        : GAMMA    0.3800E-01
+ Vegetation is off
+ Turbulence is off
+ Fluid mud is off
+ W-cap Komen (`84)    : EMPCOF   0.2360E-04 APM     0.3020E-02
+                      : DELTA    0.1000E+01
+ Battjes&Janssen (`78): ALPHA    0.1000E+01 GAMMA   0.7300E+00
+ Set-up is off
+ Diffraction is off
+ Janssen (`89,`90)    : ALPHA    0.1000E-01 KAPPA   0.4100E+00
+ Janssen (`89,`90)    : RHOA     0.1280E+01 RHOW    0.1025E+04
+
+ 1st and 2nd gen. wind: CF10     0.1880E+03 CF20    0.5900E+00
+                      : CF30     0.1200E+00 CF40    0.2500E+03
+                      : CF50     0.2300E-02 CF60   -0.2230E+00
+                      : CF70     0.0000E+00 CF80   -0.5600E+00
+                      : RHOAW    0.1249E-02 EDMLPM  0.3600E-02
+                      : CDRAG    0.1230E-02 UMIN    0.1000E+01
+                      : LIM_PM   0.1300E+00
+
+  ---------------------------------------------------------------
+  First guess by 2nd generation model flags for first iteration:
+  ITER       1 GRWMX      0.1000E+23 ALFA       0.0000E+00
+  IWIND      2 IWCAP      0 IQUAD      0
+  ITRIAD     1 IBOT       1 ISURF      1
+  IVEG       0 ITURBV     0 IMUD       0
+  ---------------------------------------------------------------
+ iteration    1; sweep 1
+ iteration    1; sweep 2
+ iteration    1; sweep 3
+ iteration    1; sweep 4
+ not possible to compute, first iteration
+
+  ---------------------------------------------------------------
+  Options given by user are activated for proceeding calculation:
+  ITER       2 GRWMX      0.1000E+00 ALFA       0.0000E+00
+  IWIND      3 IWCAP      1 IQUAD      2
+  ITRIAD     1 IBOT       1 ISURF      1
+  IVEG       0 ITURBV     0 IMUD       0
+  ---------------------------------------------------------------
+ iteration    2; sweep 1
+ iteration    2; sweep 2
+ iteration    2; sweep 3
+ iteration    2; sweep 4
+ accuracy OK in  83.33 % of wet grid points ( 99.50 % required)
+
+ iteration    3; sweep 1
+ iteration    3; sweep 2
+ iteration    3; sweep 3
+ iteration    3; sweep 4
+ accuracy OK in   6.09 % of wet grid points ( 99.50 % required)
+
+ iteration    4; sweep 1
+ iteration    4; sweep 2
+ iteration    4; sweep 3
+ iteration    4; sweep 4
+ accuracy OK in  93.59 % of wet grid points ( 99.50 % required)
+
+ iteration    5; sweep 1
+ iteration    5; sweep 2
+ iteration    5; sweep 3
+ iteration    5; sweep 4
+ accuracy OK in  96.47 % of wet grid points ( 99.50 % required)
+
+ iteration    6; sweep 1
+ iteration    6; sweep 2
+ iteration    6; sweep 3
+ iteration    6; sweep 4
+ accuracy OK in  97.76 % of wet grid points ( 99.50 % required)
+
+ iteration    7; sweep 1
+ iteration    7; sweep 2
+ iteration    7; sweep 3
+ iteration    7; sweep 4
+ accuracy OK in  99.36 % of wet grid points ( 99.50 % required)
+
+ iteration    8; sweep 1
+ iteration    8; sweep 2
+ iteration    8; sweep 3
+ iteration    8; sweep 4
+ accuracy OK in  99.36 % of wet grid points ( 99.50 % required)
+
+ iteration    9; sweep 1
+ iteration    9; sweep 2
+ iteration    9; sweep 3
+ iteration    9; sweep 4
+ accuracy OK in 100.00 % of wet grid points ( 99.50 % required)
+
+
+    
+ STOP
