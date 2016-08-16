@@ -3,7 +3,7 @@ clc;clear all
 N=241; M=181;
 
 
-fid1=fopen('.\output\HsCA.txt');
+fid1=fopen('./output/HsCA.txt');
 
 
     H=fscanf(fid1,'%f',[N M]); % xc+1 and yc+1

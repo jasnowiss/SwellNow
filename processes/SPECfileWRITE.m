@@ -1,10 +1,10 @@
 clc;clear all;close all; fclose all
 
-[date, bw, E, f]=specsum('.\inputs\DATA_spec.txt');
-[date, bw, A1, f]=specsum('.\inputs\DATA_dir1.txt');
-[date, bw, A2, f]=specsum('.\inputs\DATA_dir2.txt');
-[date, bw, R1, f]=specsum('.\inputs\DATA_r1.txt');
-[date, bw, R2, f]=specsum('.\inputs\DATA_r2.txt');
+[date, bw, E, f]=specsum('./inputs/DATA_spec.txt');
+[date, bw, A1, f]=specsum('./inputs/DATA_dir1.txt');
+[date, bw, A2, f]=specsum('./inputs/DATA_dir2.txt');
+[date, bw, R1, f]=specsum('./inputs/DATA_r1.txt');
+[date, bw, R2, f]=specsum('./inputs/DATA_r2.txt');
 
 
 %convert direction
@@ -12,7 +12,7 @@ Dir=-1*((A1(1,:)+A2(1,:))./2)+270;
     
 %openfile in SWAN directory
 
-fid=fopen('.\inputs\specfiletemplate.txt','r');
+fid=fopen('./inputs/specfiletemplate.txt','r');
 
 for i=1:1:43
  
@@ -23,7 +23,7 @@ end
 %create enter symbol to clear new line
 rt=header{43};
 
-fid2=fopen('.\inputs\specSWANfile.txt','w');
+fid2=fopen('./inputs/specSWANfile.txt','w');
 
 for i=1:1:42
  

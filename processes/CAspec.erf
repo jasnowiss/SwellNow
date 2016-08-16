@@ -1,1 +1,1 @@
-Severe error     : File open failed, filename: ./output/HsCA.txt                                                               
+Terminating error: File cannot be opened/does not exist: .\inputs\SoCal_low.txt                                                          

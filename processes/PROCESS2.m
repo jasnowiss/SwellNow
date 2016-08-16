@@ -82,7 +82,7 @@ lenarray=[1:1:len];
 for i=1:1
 
     
-name=['.\output\Hs',fname(i,:),'.txt'];
+name=['./output/Hs',fname(i,:),'.txt'];
 
     
 fid1=fopen(name);
@@ -136,7 +136,7 @@ axis off
 clim([0 15])
      
 %this muct be changed based on computer
-imgname=['.\output\imgs\','Hs',fname(i,:),num2str(xn),num2str(yn),'.png'];
+imgname=['./output/imgs/','Hs',fname(i,:),num2str(xn),num2str(yn),'.png'];
    
 print(imgname)
 
