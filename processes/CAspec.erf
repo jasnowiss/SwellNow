@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Terminating error: File cannot be opened/does not exist: .inputs/SoCal_low.txt                                                           
+=======
+Terminating error: File cannot be opened/does not exist: ./inputs/SoCal_low.txt                                                          
+>>>>>>> 9ad2df4ffdac774badea806d183760ff699f22e8

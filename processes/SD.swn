@@ -15,7 +15,7 @@ CGRID -117.75  32.5   0. .75  1.0 300 400 CIRCLE 36 0.0521 1. 31
 !
 INPGRID BOTTOM -121 32 0. 4799 3599 .0008333333333 .0008333333333 EXC -99.
 !
-READINP BOTTOM 1. './inputs/SoCal_high.txt' 1 0 FREE
+READINP BOTTOM 1. 'SoCal_high.txt' 1 0 FREE
 !
 BOU SHAP JON 3.3 PEAK DSPR DEGR
 !
@@ -28,8 +28,8 @@ GEN3
 !***********************************************************
 !
 !generate binary Matlab-file for block-output
-BLOCK  'COMPGRID' NOHEAD './output/HsSD.txt' LAYOUT 3 HS
-BLOCK  'COMPGRID' NOHEAD './output/DirSD.txt' LAYOUT 3 DIR
+BLOCK  'COMPGRID' NOHEAD 'HsSD.txt' LAYOUT 3 HS
+BLOCK  'COMPGRID' NOHEAD 'DirSD.txt' LAYOUT 3 DIR
 !
 TEST 1,0
 COMPUTE
