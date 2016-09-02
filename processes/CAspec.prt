@@ -1,6 +1,6 @@
 1
 
-                    Execution started at 20160815.171046         
+                    Execution started at 20160815.172418         
 
 
 
@@ -19,5 +19,5 @@
     
  INPGRID BOTTOM -121 32 0. 239 179  .0167 .0167 EXC -99.
     
- READINP BOTTOM 1. '.\inputs\SoCal_low.txt' 1 0 FREE
- ** Terminating error: File cannot be opened/does not exist: .\inputs\SoCal_low.txt                                                          
+ READINP BOTTOM 1. '.inputs/SoCal_low.txt' 1 0 FREE
+ ** Terminating error: File cannot be opened/does not exist: .inputs/SoCal_low.txt                                                           

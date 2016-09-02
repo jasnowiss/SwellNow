@@ -88,7 +88,14 @@ name=['./output/Hs',fname(i,:),'.txt'];
 fid1=fopen(name);
 
 
-    H=fscanf(fid1,'%f',[fdimsX(i) fdimsY(i)]); % xc+1 and yc+1
+    H1=fscanf(fid1,'%f'); % xc+1 and yc+1
+    
+    count=1;
+    H=zeros(fdimsX(i),fdimsY(i));
+    for iii=1:1:length(H1)
+        H(iii)=H1(iii);
+    end
+    
      AA=find(H<0.01);
     H(AA)=NaN;
    

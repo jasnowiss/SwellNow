@@ -6,7 +6,15 @@ N=241; M=181;
 fid1=fopen('./output/HsCA.txt');
 
 
-    H=fscanf(fid1,'%f',[N M]); % xc+1 and yc+1
+    H1=fscanf(fid1,'%f'); % xc+1 and yc+1
+ 
+    H=zeros(N,M);
+    for i=1:1:length(H1)
+          H(i)=H1(i);
+    end
+  
+            
+    
      AA=find(H<0.01);
     H(AA)=NaN;
     
@@ -16,7 +24,7 @@ H=H.*3.28084;
 
 
 figure
- sizefig(500,500)
+ sizefig(241*10,181*10)
  
  
  chart=pcolor(H')
@@ -62,3 +70,4 @@ clim([0 15])
 
  set(gca,'position',[0 0 1 1] ,'units','normalized')
   
+print('test1.png')
