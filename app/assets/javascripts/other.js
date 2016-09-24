@@ -48,9 +48,10 @@ $(document).ready(function() {
     var context = canvas.getContext('2d');
 
     function resizeCanvas() {
-            var chartSize = document.getElementById('chart').offsetWidth * 2.0 / 3.0;
+            // var chartSize = document.getElementById('chart').offsetWidth * 2.0 / 3.0;
+            var chartSize = document.getElementById('chart').offsetWidth;
             canvas.width = chartSize;
-            canvas.height = chartSize;
+            canvas.height = chartSize / 3.0;
             canvas.style.cursor = "crosshair";
 
             /**
@@ -65,7 +66,8 @@ $(document).ready(function() {
         // context.fillRect(0, 0, 50, 50);
         // context.fillStyle = "rgb(0,0,255)";
         // context.fillRect(55, 0, 50, 50);
-        var chartSize = document.getElementById('chart').offsetWidth * 2.0 / 3.0;
+        // var chartSize = document.getElementById('chart').offsetWidth * 2.0 / 3.0;
+        var chartSize = document.getElementById('chart').offsetWidth;
         var base_image = new Image();
         base_image.setAttribute('crossOrigin', 'Anonymous');
         base_image.src = 'https://dl.dropboxusercontent.com/s/uplzpw44vva91a1/test.png';
