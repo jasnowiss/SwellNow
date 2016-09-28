@@ -1,21 +1,5 @@
 <% provide(:title, "Swell Now") %>
 
-<!-- Header -->
-<!-- <header>
-  <div class="container">
-    <div class="intro-text">
-      <div class="intro-lead-in">Welcome To Our Studio!</div>
-      <div class="intro-heading">It's Nice To Meet You</div>
-      <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-    </div>
-  </div>
-</header> -->
-
-<!-- Home Section -->
-<!-- <section id="home">
-</section> -->
-
-
 <div class="page-home">
   <div class="container" id="dropmenu">
     <div id="dd-menu1" class="dropdown" style="position:relative;display:inline-block">
@@ -23,6 +7,20 @@
       <ul class="dropdown-menu">
         <li>
           <a class="trigger right-caret">West Coast</a>
+          <ul class="dropdown-menu sub-menu">
+            <li>
+              <a class="trigger right-caret">Southern California</a>
+              <ul class="dropdown-menu sub-menu">
+                <li><a href="#" onclick="rename('Santa Barbara');return false;">Santa Barbara</a></li>
+                <li><a href="#" onclick="rename('Los Angeles');return false;">Los Angeles</a></li>
+                <li><a href="#" onclick="rename('Orange County');return false;">Orange County</a></li>
+                <li><a href="#" onclick="rename('San Diego');return false;">San Diego</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="trigger right-caret">East Coast</a>
           <ul class="dropdown-menu sub-menu">
             <li>
               <a class="trigger right-caret">Southern California</a>
@@ -72,6 +70,7 @@
       <div id="status" class="col-xs-3"></div>
     </div> -->
     <div id="status"></div>
+    <div id="location-text"></div>
     <div style="margin-top: 37px">
       <canvas id="canvas" width="200" height="60"></canvas>
     </div>
@@ -98,15 +97,5 @@
   </div>
 </div>
 
-
-<!-- <hr style="height:1px;border:none;color:#333;background-color:#333;" /> -->
-
-<!-- <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <span class="copyright">Copyright &copy; jeffsnowiss.com 2016</span>
-      </div>
-    </div>
-  </div>
-</footer> -->
+<!-- Specific javascript file for this page -->
+<%= javascript_include_tag 'homepage' %>

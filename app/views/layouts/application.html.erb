@@ -43,9 +43,24 @@
 
   <%= csrf_meta_tags %>
 
+  <!-- JavaScript -->
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+
   <!-- jQuery plugins, because the Rails default ones screwed me -->
   <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js' %>
-  <%= javascript_include_tag 'http://jquery-ui.googlecode.com/svn/tags/latest/ui/jquery.effects.core.js' %> <!-- resource throwing error -->
+
+  <!-- Bootstrap Core JavaScript -->
+  <%= javascript_include_tag 'bootstrap.min' %>
+
+  <!-- javascript_include_tag 'classie' -->
+  <!-- javascript_include_tag 'cbpAnimatedHeader' -->
+
+  <!-- Contact Form JavaScript -->
+  <!-- javascript_include_tag 'jqBootstrapValidation' -->
+  <!-- javascript_include_tag 'contact_me' -->
+
+  <!-- Custom Theme JavaScript -->
+  <!-- javascript_include_tag 'agency' -->
 
 </head>
 
@@ -107,28 +122,8 @@
 
   <%= yield %>
 
-  <!-- JavaScript -->
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
-
-  <!-- May need to re-include jquery javascript tag -->
-
-  <!-- Bootstrap Core JavaScript -->
-  <%= javascript_include_tag 'bootstrap.min' %>
-
-  <!-- Plugin JavaScript -->
-  <%= javascript_include_tag 'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js' %>
-  <!-- javascript_include_tag 'classie' -->
-  <!-- javascript_include_tag 'cbpAnimatedHeader' -->
-
-  <!-- Contact Form JavaScript -->
-  <!-- javascript_include_tag 'jqBootstrapValidation' -->
-  <!-- javascript_include_tag 'contact_me' -->
-
-  <!-- Custom Theme JavaScript -->
-  <!-- javascript_include_tag 'agency' -->
-
-  <!-- Other Useful JavaScript Stuff -->
-  <%= javascript_include_tag 'other' %>
+  <!-- Custom javascript shared by all pages -->
+  <%= javascript_include_tag 'shared' %>
 
 </body>
 
