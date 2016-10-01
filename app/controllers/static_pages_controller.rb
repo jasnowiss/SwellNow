@@ -4,26 +4,10 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def california
+  def about
   end
 
-#from westcoast
-  def ca_SB
+  def contact
   end
-
-  def ca_LA
-  end
-
-  def ca_OC
-  end
-
-  def ca_SD
-  end
-
-#from rhodeisland
-
-
-
-
 
 end

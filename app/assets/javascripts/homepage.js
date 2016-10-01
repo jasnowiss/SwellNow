@@ -51,7 +51,7 @@ $('#canvas').mousemove(function(e) {
     var c = this.getContext('2d');
     var p = c.getImageData(x, y, 1, 1).data; 
     var hex = "#" + ("000000" + rgbToHex(p[0], p[1], p[2])).slice(-6);
-    $('#status').html(coord + "</br>" + hex);
+    // $('#status').html(coord + "</br>" + hex);
 });
 
 // FOR TESTING
@@ -98,13 +98,13 @@ function rename(s) {
 }
 
 // FOR TESTING. REMOVE LATER
-$('<div/>', {
-    'id':'myDiv',
-    'class':'myClass',
-    'text':'Text Only',
-}).on('click', function(){
-    alert(this.id);
-}).appendTo('body');
+// $('<div/>', {
+//     'id':'myDiv',
+//     'class':'myClass',
+//     'text':'Text Only',
+// }).on('click', function(){
+//     alert(this.id);
+// }).appendTo('body');
 
 /*** 1. MAIN IDENTIFIER, 2...END. SUB-IDENTIFIERS ***/
 var locations = ["North America", 

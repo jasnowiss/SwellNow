@@ -84,8 +84,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <%= link_to image_tag("https://dl.dropboxusercontent.com/s/mnt917m0vw7bx35/swellnowlogov2.png", size:"200x35"), root_path %> <!-- 5.8 ratio -->
-        <!-- <a class="navbar-brand page-scroll" href="#page-top">Jeffrey Snowiss</a> -->
+        <%= link_to image_tag("https://dl.dropboxusercontent.com/s/mnt917m0vw7bx35/swellnowlogov2.png", :id => "logonavbar"), root_path %> <!-- 5.8 ratio -->
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -95,24 +94,11 @@
             <a href="#page-top"></a>
           </li>
           <li>
-            <%= link_to "About", ca_path %>
+            <%= link_to "About", about_path %>
           </li>
           <li>
-            <%= link_to "Contact", ca_path %>
+            <%= link_to "Contact", contact_path %>
           </li>
-          <li>
-            <!-- link_to "Resume", resume_path -->
-          </li>
-          
-         <!--  <li>
-            <a class="page-scroll" href="#about">About</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#team">Team</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#contact">Contact</a>
-          </li> -->
         </ul>
       </div>
       <!-- /.navbar-collapse -->

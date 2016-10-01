@@ -1,42 +1,9 @@
 <% provide(:title, "Swell Now") %>
 
-<div class="page-home">
-  <div class="container" id="dropmenu">
+<div class="container page-home">
+  <div id="dropmenu">
     <div id="dd-menu1" class="dropdown" style="position:relative;display:inline-block">
       <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">North America <span class="caret"></span></a>
-      <ul class="dropdown-menu">
-        <li>
-          <a class="trigger right-caret">West Coast</a>
-          <ul class="dropdown-menu sub-menu">
-            <li>
-              <a class="trigger right-caret">Southern California</a>
-              <ul class="dropdown-menu sub-menu">
-                <li><a href="#" onclick="rename('Santa Barbara');return false;">Santa Barbara</a></li>
-                <li><a href="#" onclick="rename('Los Angeles');return false;">Los Angeles</a></li>
-                <li><a href="#" onclick="rename('Orange County');return false;">Orange County</a></li>
-                <li><a href="#" onclick="rename('San Diego');return false;">San Diego</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a class="trigger right-caret">East Coast</a>
-          <ul class="dropdown-menu sub-menu">
-            <li>
-              <a class="trigger right-caret">Southern California</a>
-              <ul class="dropdown-menu sub-menu">
-                <li><a href="#" onclick="rename('Santa Barbara');return false;">Santa Barbara</a></li>
-                <li><a href="#" onclick="rename('Los Angeles');return false;">Los Angeles</a></li>
-                <li><a href="#" onclick="rename('Orange County');return false;">Orange County</a></li>
-                <li><a href="#" onclick="rename('San Diego');return false;">San Diego</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="dropdown" style="position:relative;display:inline-block">
-      <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">West Coast <span class="caret"></span></a>
       <ul class="dropdown-menu">
         <li>
           <a class="trigger right-caret">Southern California</a>
@@ -45,6 +12,13 @@
             <li><a href="#" onclick="rename('Los Angeles');return false;">Los Angeles</a></li>
             <li><a href="#" onclick="rename('Orange County');return false;">Orange County</a></li>
             <li><a href="#" onclick="rename('San Diego');return false;">San Diego</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="trigger right-caret">Rhode Island</a>
+          <ul class="dropdown-menu sub-menu">
+            <li><a href="#" onclick="rename('West Bay');return false;">West Bay</a></li>
+            <li><a href="#" onclick="rename('East Bay');return false;">East Bay</a></li>
           </ul>
         </li>
       </ul>
@@ -62,39 +36,24 @@
       <a href="#" id="ca-county" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Los Angeles</a>
     </div>
   </div>
-  <div class="container" id="chart">
-    <!-- <div class="row" style="margin-top: 37px">
-      <div class="col-xs-9">
-        <canvas id="canvas" width="200" height="60"></canvas>
-      </div>
-      <div id="status" class="col-xs-3"></div>
-    </div> -->
+  <div id="chart">
     <div id="status"></div>
     <div id="location-text"></div>
     <div style="margin-top: 37px">
       <canvas id="canvas" width="200" height="60"></canvas>
     </div>
   </div>
-  <div class="container">
-    <div>
-      <img src="https://dl.dropboxusercontent.com/s/0yospz8q02iiofs/SwellColors.png" width="100%" alt="colorchart"/>
-    </div>
-    <div class="row" style="margin-top: 37px">
-      <div class="col-xs-4" id="dirspec">
-        <img src="https://drawception.com/pub/panels/2016/4-3/7HDAYH57aE-14.png" width="100%" alt="raindrop"/>
-      </div>
-      <div class="col-xs-6" id="freqspec">
-        <img src="https://pixabay.com/static/uploads/photo/2014/04/11/09/28/water-321524_960_720.jpg" width="100%" alt="water"/>
-      </div>
-      <!-- <div id="box1" class="col-md-5 col-md-offset-1 col-sm-6 col-lg-4 col-lg-offset-2">
-        <p>This is a website that deals with water and stuff. Water is love. Water is life.</p>
-         <p style="margin-top: 15px">Check out this image of an angry raindrop. See how angry it is?</p>
-      </div>
-      <div id="box2" class="col-md-5 col-sm-6 col-lg-4">
-        <img src="https://drawception.com/pub/panels/2016/4-3/7HDAYH57aE-14.png" alt="angry raindrop" width="69%" class="image-container-one" />
-      </div> -->
-    </div>
+  <div>
+    <img src="https://dl.dropboxusercontent.com/s/0yospz8q02iiofs/SwellColors.png" width="100%" alt="colorchart"/>
   </div>
+  <!-- <div class="row" style="margin-top: 37px">
+    <div class="col-xs-4" id="dirspec">
+      <img src="https://drawception.com/pub/panels/2016/4-3/7HDAYH57aE-14.png" width="100%" alt="raindrop"/>
+    </div>
+    <div class="col-xs-6" id="freqspec">
+      <img src="https://pixabay.com/static/uploads/photo/2014/04/11/09/28/water-321524_960_720.jpg" width="100%" alt="water"/>
+    </div>
+  </div> -->
 </div>
 
 <!-- Specific javascript file for this page -->
