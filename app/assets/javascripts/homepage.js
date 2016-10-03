@@ -34,7 +34,7 @@ function drawStuff() {
     var chartSize = document.getElementById('chart').offsetWidth;
     var base_image = new Image();
     base_image.setAttribute('crossOrigin', 'Anonymous');
-    base_image.src = 'https://dl.dropboxusercontent.com/s/uplzpw44vva91a1/test.png';
+    base_image.src = 'https://dl.dropboxusercontent.com/s/fcvvui1npynxgkk/WestRI.png';
     base_image.onload = function(){
         context.drawImage(base_image, 0, 0, chartSize, chartSize * base_image.height / base_image.width);
     }
