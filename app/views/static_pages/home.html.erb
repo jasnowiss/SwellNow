@@ -1,50 +1,17 @@
 <% provide(:title, "Swell Now") %>
 
 <div class="container page-home">
+  <div id="location-text"></div>
   <div id="dropmenu">
-    <div id="dd-menu1" class="dropdown" style="position:relative;display:inline-block">
-      <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">North America <span class="caret"></span></a>
-      <ul class="dropdown-menu">
-        <li>
-          <a class="trigger right-caret">Southern California</a>
-          <ul class="dropdown-menu sub-menu">
-            <li><a href="#" onclick="rename('Santa Barbara');return false;">Santa Barbara</a></li>
-            <li><a href="#" onclick="rename('Los Angeles');return false;">Los Angeles</a></li>
-            <li><a href="#" onclick="rename('Orange County');return false;">Orange County</a></li>
-            <li><a href="#" onclick="rename('San Diego');return false;">San Diego</a></li>
-          </ul>
-        </li>
-        <li>
-          <a class="trigger right-caret">Rhode Island</a>
-          <ul class="dropdown-menu sub-menu">
-            <li><a href="#" onclick="rename('West Bay');return false;">West Bay</a></li>
-            <li><a href="#" onclick="rename('East Bay');return false;">East Bay</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="dropdown" style="position:relative;display:inline-block">
-      <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Southern California <span class="caret"></span></a>
-      <ul class="dropdown-menu">
-        <li><a href="#" onclick="rename('Santa Barbara');return false;">Santa Barbara</a></li>
-        <li><a href="#" onclick="rename('Los Angeles');return false;">Los Angeles</a></li>
-        <li><a href="#" onclick="rename('Orange County');return false;">Orange County</a></li>
-        <li><a href="#" onclick="rename('San Diego');return false;">San Diego</a></li>
-      </ul>
-    </div>
-    <div class="dropdown" style="position:relative;display:inline-block">
-      <a href="#" id="ca-county" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Los Angeles</a>
-    </div>
   </div>
   <div id="chart">
     <div id="status"></div>
-    <div id="location-text"></div>
-    <div style="margin-top: 37px">
+    <div style="margin-top: 10px">
       <canvas id="canvas" width="200" height="60"></canvas>
     </div>
   </div>
   <div>
-    <img src="https://dl.dropboxusercontent.com/s/0yospz8q02iiofs/SwellColors.png" width="100%" alt="colorchart"/>
+    <img id="swellcolors" src="https://dl.dropboxusercontent.com/s/0yospz8q02iiofs/SwellColors.png" alt="colorchart"/>
   </div>
   <!-- <div class="row" style="margin-top: 37px">
     <div class="col-xs-4" id="dirspec">

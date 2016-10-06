@@ -18,7 +18,7 @@ SECTION: DROPDOWN MENU
 body
 {
 	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 	font-weight: 500;
 	webkit-tap-highlight-color: #fed136;
 }
@@ -272,11 +272,19 @@ img::-moz-selection
 
 }
 
+.container-non-responsive {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  /*width: 1170px;*/
+}
+
 /*** SECTION: PAGE SPECIFIC DEFAULTS ***/
 .page-home /* homepage properties */
 {
 	padding-bottom: 0px;
-	padding-top: 135px;
+	padding-top: 125px;
 	background-attachment: scroll;
 	/*background-image: url(../assets/mypics/ocean.jpg);*/
 	/*background-position: center center;
