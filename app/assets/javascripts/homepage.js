@@ -3,7 +3,7 @@
 /*** 1. MAIN IDENTIFIER, 2...END. SUB-IDENTIFIERS ***/
 var locations = ["North America", 
 ["Southern California", ["Santa Barbara", "Los Angeles", "Orange County", "San Diego"]], 
-["Rhode Island", ["West Bay", "East Bay"]]];
+["Rhode Island", ["West Rhode Island", "East Rhode Island"]]];
 
 var locationurls = {"North America":"", 
 "Southern California":"", 
@@ -12,8 +12,8 @@ var locationurls = {"North America":"",
 "Orange County":"https://dl.dropboxusercontent.com/s/ukgy4pbum1rc0f3/OC.png",
 "San Diego":"https://dl.dropboxusercontent.com/s/9oxio9ns6mizcq7/SD.png",
 "Rhode Island":"",
-"West Bay":"https://dl.dropboxusercontent.com/s/fcvvui1npynxgkk/WestRI.png",
-"East Bay":"https://dl.dropboxusercontent.com/s/x806t0i87pjahpj/EastRI.png"};
+"West Rhode Island":"https://dl.dropboxusercontent.com/s/fcvvui1npynxgkk/WestRI.png",
+"East Rhode Island":"https://dl.dropboxusercontent.com/s/x806t0i87pjahpj/EastRI.png"};
 
 /*** SECTION FOR RESIZING ***/
 // resize the canvas to fill browser window dynamically
@@ -213,7 +213,7 @@ function resetDropdown() {
     });
 }
 
-setNavAndCanvas("West Bay");
+setNavAndCanvas("West Rhode Island");
 
 // alert(getLocPath("West Bay"));
 // alert(spaceToUnderscore(locationurls.North_America));
