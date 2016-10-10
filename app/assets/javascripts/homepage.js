@@ -27,6 +27,26 @@ var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
 var defWidth = document.getElementById('chart').offsetWidth;
 
+
+/*** SETTING COLOR CHART VALUES ***/
+var colorvalues = {};
+
+function setColorChart() {
+    var file = "https://dl.dropboxusercontent.com/s/fvjgso66h0bd422/rgbcolors.txt";
+    $.get(file,function(txt){
+        var lines = txt.split(/\s+/g);
+        var current = 1;
+        var end = 150;
+        var numlines = 150;
+        for (var i = 0; i < numlines; i++) {
+            colorvalues[lines[i]] = current / 10.0;
+            current += 1;
+        }
+    }); 
+}
+
+setColorChart();
+
 // function resizeCanvas() {
 //         // var chartSize = document.getElementById('chart').offsetWidth * 2.0 / 3.0;
 //         var chartSize = document.getElementById('chart').offsetWidth;
@@ -170,7 +190,28 @@ function resetCanvasSensing() {
         var c = this.getContext('2d');
         var p = c.getImageData(x, y, 1, 1).data; 
         var hex = "#" + ("000000" + rgbToHex(p[0], p[1], p[2])).slice(-6);
-        // $('#status').html(coord + "</br>" + hex);
+        hex = hex.toUpperCase();
+        var swellheight = colorvalues[hex];
+        if (swellheight != undefined) {
+            // $('#status').html(coord + "</br>" + hex + "</br>" + waveheight + " ft");
+            // $('#status').html("<p>Swell Height: " + swellheight + " ft</p>");
+            //getting height and width of the message box
+            var height = $('#swellstatus').height();
+            var width = $('#swellstatus').width();
+            //calculating offset for displaying popup message
+            // leftVal=e.pageX-(width/2)+"px";
+            // topVal=e.pageY-(height/2)+"px";
+            leftVal=e.pageX+10+"px";
+            topVal=e.pageY+10+"px";
+            //show the popup message and hide with fading effect
+            $('#swellstatus').html("<p>Swell Height: " + swellheight + " ft</p>");
+            $('#swellstatus').css({left:leftVal,top:topVal}).show();
+        } else {
+            $('#swellstatus').hide();
+        }
+    });
+    $('#canvas').mouseout(function(){
+        $('#swellstatus').hide();
     });
 }
 
@@ -214,6 +255,16 @@ function resetDropdown() {
 }
 
 setNavAndCanvas("West Rhode Island");
+
+// var file = "http://plapla.com/pla.txt";
+// function getFile(){
+//     $.get(file,function(txt){
+//         var lines = txt.responseText.split("\n");
+//         for (var i = 0, len = lines.length; i < len; i++) {
+//             save(lines[i]);
+//         }
+//     }); 
+// }
 
 // alert(getLocPath("West Bay"));
 // alert(spaceToUnderscore(locationurls.North_America));

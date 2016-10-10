@@ -542,6 +542,25 @@ hr
 	margin-top: 5px;
 }
 
+#swellstatus {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #303030;
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 7px;
+	position:absolute;
+	z-index:10;
+	/*width:172px;
+	height:102px;*/
+	text-align:center;
+	color: black;
+	/*background:url(bg_image.gif) bottom right no-repeat;*/
+	padding-left: 5px;
+	padding-right: 5px;
+	/*padding-top: 5px;*/
+	display:none;
+}
+
 /*** SECTION: HEADERS ***/
 header
 {
