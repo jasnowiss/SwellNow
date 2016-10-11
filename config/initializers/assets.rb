@@ -18,6 +18,7 @@ Rails.application.config.assets.precompile += %w( personalized.css )
 # Rails.application.config.assets.precompile += %w( easelcss/shared.css )
 # Rails.application.config.assets.precompile += %w( easelcss/examples.css )
 Rails.application.config.assets.precompile += %w( other.css )
+Rails.application.config.assets.precompile += %w( non-responsive.css )
 
 # Rails.application.config.assets.precompile += %w( jquery.js) # removed based on rails specifications
 Rails.application.config.assets.precompile += %w( bootstrap.min.js)
