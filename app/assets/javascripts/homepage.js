@@ -25,6 +25,7 @@ var locationurls = {"North America":"",
 
 var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
+var minimumWidth = 800;
 var defWidth = document.getElementById('chart').offsetWidth;
 
 
@@ -44,8 +45,6 @@ function setColorChart() {
         }
     }); 
 }
-
-setColorChart();
 
 // function resizeCanvas() {
 //         // var chartSize = document.getElementById('chart').offsetWidth * 2.0 / 3.0;
@@ -198,14 +197,23 @@ function resetCanvasSensing() {
             //getting height and width of the message box
             var height = $('#swellstatus').height();
             var width = $('#swellstatus').width();
+            // alert(width);
             //calculating offset for displaying popup message
             // leftVal=e.pageX-(width/2)+"px";
             // topVal=e.pageY-(height/2)+"px";
-            leftVal=e.pageX+10+"px";
-            topVal=e.pageY+10+"px";
+            // change based on location on canvas
+            leftVal = e.pageX + 10 + "px";
+            topVal = e.pageY + 10 + "px";
+            if (x + 165 > canvas.width) { // px kludge
+                leftVal = e.pageX - width - 23 + "px";
+            }
+            if (y + 60 > canvas.height) { // px kludge
+                topVal = e.pageY - height - 13 + "px";
+            }
             //show the popup message and hide with fading effect
             $('#swellstatus').html("<p>Swell Height: " + swellheight + " ft</p>");
             $('#swellstatus').css({left:leftVal,top:topVal}).show();
+            // alert(document.getElementById('swellstatus').offsetHeight);
         } else {
             $('#swellstatus').hide();
         }
@@ -254,7 +262,18 @@ function resetDropdown() {
     });
 }
 
-setNavAndCanvas("West Rhode Island");
+function init() {
+    if (minimumWidth > defWidth) {
+        defWidth = minimumWidth;
+    }
+    document.getElementById('dropmenu').style.minWidth = defWidth + "px";
+    document.getElementById('location-text').style.minWidth = defWidth + "px";
+    document.getElementById('swellstatus').style.whiteSpace = "nowrap";
+    setColorChart();
+    setNavAndCanvas("West Rhode Island");
+}
+
+init();
 
 // var file = "http://plapla.com/pla.txt";
 // function getFile(){
