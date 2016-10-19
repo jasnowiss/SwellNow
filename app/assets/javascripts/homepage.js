@@ -262,6 +262,45 @@ function resetDropdown() {
     });
 }
 
+/*** FOR HORIZONTAL BUT NOT VERTICALLY SCROLLING NAVBAR ***/
+function setTopBar() {
+    var $horizontal = $('#horizontal');
+
+    $(window).scroll(function () {
+        var s = $(this).scrollLeft(),
+            d = $(document).width(),
+            c = $(this).width();
+
+        scrollPercent = (s / (d - c));
+
+        var position = (scrollPercent * ($(document).width() - $horizontal.width()));
+        
+        $horizontal.css({
+            'left': position
+        });
+    });
+
+    $(window).resize(function() {
+        var s = $(this).scrollLeft(),
+            d = $(document).width(),
+            c = $(this).width();
+
+        scrollPercent = (s / (d - c));
+
+        var position = (scrollPercent * ($(document).width() - $horizontal.width()));
+        
+        $horizontal.css({
+            'left': position
+        });
+
+        if ($(document).width() > defWidth + 15) { // 15 for container offset
+            $horizontal.css({
+                'left': 0
+            });
+        } 
+    });
+}
+
 function init() {
     if (minimumWidth > defWidth) {
         defWidth = minimumWidth;
@@ -271,6 +310,7 @@ function init() {
     document.getElementById('swellstatus').style.whiteSpace = "nowrap";
     setColorChart();
     setNavAndCanvas("West Rhode Island");
+    setTopBar();
 }
 
 init();
