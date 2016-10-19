@@ -226,6 +226,22 @@ img::-moz-selection
 	background-color: #fec503;
 	color: #fff;
 }
+
+.navbar-static-top {
+	/*position: fixed;
+	left: 50%;
+	margin-left: -500px;
+	top: 0px;*/
+}
+
+.container > .navbar-header,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-collapse {
+	margin-right: 0;
+	margin-left: 1px;
+}
+
 @media (min-width:768px)
 {
 
@@ -270,6 +286,30 @@ img::-moz-selection
 		color: #3399ff;
 	}
 
+	/*.navbar-collapse {
+		width: auto;
+		border-top: 0;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+	}
+	.navbar-collapse.collapse {
+		display: block !important;
+		height: auto !important;
+		padding-bottom: 0;
+		overflow: visible !important;
+	}
+	.navbar-collapse.in {
+		overflow-y: visible;
+	}*/
+
+	.container > .navbar-header,
+	.container-fluid > .navbar-header,
+	.container > .navbar-collapse,
+	.container-fluid > .navbar-collapse {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
 }
 
 .container-non-responsive {
@@ -284,7 +324,7 @@ img::-moz-selection
 .page-home /* homepage properties */
 {
 	padding-bottom: 0px;
-	padding-top: 125px;
+	padding-top: 20px;
 	background-attachment: scroll;
 	/*background-image: url(../assets/mypics/ocean.jpg);*/
 	/*background-position: center center;
@@ -315,60 +355,6 @@ img::-moz-selection
 	o-background-size: cover;
 	/*text-align: center;*/
 	webkit-background-size: cover;
-}
-
-.page-proj /* project page properties */
-{
-	padding-bottom: 50px;
-	padding-top: 100px;
-	background-attachment: scroll;
-	/*background-image: url(../assets/mypics/ocean.jpg);*/
-	background-position: center center;
-	background-repeat: none;
-	background-size: cover;
-	moz-background-size: cover;
-	o-background-size: cover;
-	/*text-align: center;*/
-	webkit-background-size: cover;
-	
-}
-
-.page-proj-two /* more project page properties */
-{
-	padding-bottom: 51px;
-	padding-top: 12.5px;
-	background-attachment: scroll;
-	/*background-image: url(../assets/mypics/ocean-two.jpg);*/
-	background-position: center center;
-	background-repeat: none;
-	background-size: cover;
-	moz-background-size: cover;
-	o-background-size: cover;
-	/*text-align: center;*/
-	webkit-background-size: cover;
-	
-}
-
-.page-fun /* fun page properties */
-{
-	padding-top: 100px;
-	padding-bottom: 50px;
-}
-
-.page-resume /* resume page properties */
-{
-	padding-top: 100px;
-	padding-bottom: 100px;
-	background: #66b2ff; /* For browsers that do not support gradients */  
-	background: -webkit-linear-gradient(left top, #66ffff, #0000cc); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #66ffff, #0000cc); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #66ffff, #0000cc); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #66ffff, #0000cc); /* Standard syntax (must be last) */  
-}
-
-.page-go-man-go /* go man go page properties */
-{
-	padding: 100px 0;
 }
 
 /*** SECTION: TEXT CONTAINERS ***/
@@ -493,27 +479,6 @@ hr
 	margin: 0px;
 }
 
-.fun-image
-{
-	border-style: solid;
-	border-width: 3px;
-	border-color: #222;
-}
-
-.fun-image:hover,.fun-image:focus,.fun-image:active,.fun-image.active
-{
-	border-color: #3399ff;
-}
-
-.pretty-colors
-{
-	border-style: transparent;
-	border-radius: 25px;
-	padding: 20px;
-	padding-top: 5px;
-	background-color: #00bbbb;
-}
-
 .vertical-center {
   display: flex;
   align-items: center;
@@ -521,19 +486,6 @@ hr
 
 .image-container-one {
 	border-radius: 15px;
-}
-
-#borderimg1 { 
-    border-style: solid;
-    border-width:0 25px;
-    padding-top: 1px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    -webkit-border-image: url(../assets/other/water-beads-two.jpg) 30 round; /* Safari 3.1-5 */
-    -o-border-image: url(../assets/other/water-beads-two.jpg) 30 round; /* Opera 11-12.1 */
-    border-image: url(../assets/other/water-beads-two.jpg) 95 round;
-   	/*border-image-repeat: repeat;*/
 }
 
 #logonavbar {
