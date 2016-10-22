@@ -32,7 +32,60 @@ var defWidth = document.getElementById('chart').offsetWidth;
 var colorvalues = {};
 
 /*** STRING LOCATIONS AS KEYS, URL ARRAYS AS VALUES ***/
-var locationurls = {};
+var locationurls = {"Santa Barbara":
+["https://dl.dropboxusercontent.com/s/kd5imgs6xehmzee/0000.png",
+"https://dl.dropboxusercontent.com/s/ksugtcfq8nijquz/0001.png",
+"https://dl.dropboxusercontent.com/s/kt35kglyl2l8vyy/0002.png",
+"https://dl.dropboxusercontent.com/s/sowfnfcm8aosfh7/0003.png",
+"https://dl.dropboxusercontent.com/s/ckoct6syn0jnkz2/0006.png",
+"https://dl.dropboxusercontent.com/s/hin5bf0xwlnek2k/0012.png",
+"https://dl.dropboxusercontent.com/s/44shod8uf1jyen5/0024.png"],
+"Los Angeles":
+["https://dl.dropboxusercontent.com/s/3mik4marm2v6fx5/0000.png",
+"https://dl.dropboxusercontent.com/s/lphrm3owzzyucva/0001.png",
+"https://dl.dropboxusercontent.com/s/qk1kjem8okcwtvd/0002.png",
+"https://dl.dropboxusercontent.com/s/lkucz2qz4a0jy78/0003.png",
+"https://dl.dropboxusercontent.com/s/17fldp4odz13231/0006.png",
+"https://dl.dropboxusercontent.com/s/c7pp4knp06mklrc/0012.png",
+"https://dl.dropboxusercontent.com/s/09ydl5llbd15as1/0024.png"],
+"Orange County":
+["https://dl.dropboxusercontent.com/s/0vo0pm3af4jofs7/0000.png",
+"https://dl.dropboxusercontent.com/s/zyucyro765guhv2/0001.png",
+"https://dl.dropboxusercontent.com/s/s5m3r48d7ujynpl/0002.png",
+"https://dl.dropboxusercontent.com/s/t6nueax0g3f4c09/0003.png",
+"https://dl.dropboxusercontent.com/s/lkwgcdqpo4h4qlt/0006.png",
+"https://dl.dropboxusercontent.com/s/8sc1fclesv6yiyz/0012.png",
+"https://dl.dropboxusercontent.com/s/hgow5943cmkqc0i/0024.png"],
+"San Diego":
+["https://dl.dropboxusercontent.com/s/7p7m89rg43pu3ji/0000.png",
+"https://dl.dropboxusercontent.com/s/4c8io1su2kk9cgp/0001.png",
+"https://dl.dropboxusercontent.com/s/n3fjazt711p0bm6/0002.png",
+"https://dl.dropboxusercontent.com/s/t3gevssyea4i15u/0003.png",
+"https://dl.dropboxusercontent.com/s/t5ab3atbje2n6sh/0006.png",
+"https://dl.dropboxusercontent.com/s/sifgix4q868v0jb/0012.png",
+"https://dl.dropboxusercontent.com/s/rgdoig6oqmtdq1y/0024.png"],
+"West Rhode Island":
+["https://dl.dropboxusercontent.com/s/o540f6nsy8d9et5/0000.png",
+"https://dl.dropboxusercontent.com/s/xudr3py8hqt0khm/0001.png",
+"https://dl.dropboxusercontent.com/s/g67a03lku2ozdtv/0002.png",
+"https://dl.dropboxusercontent.com/s/4iyos22brxbfwpp/0003.png",
+"https://dl.dropboxusercontent.com/s/bmdueaz056v4c3n/0006.png",
+"https://dl.dropboxusercontent.com/s/vla3p5b775fkfsb/0012.png",
+"https://dl.dropboxusercontent.com/s/s1u1577o9e5t4ka/0024.png"],
+"East Rhode Island":
+["https://dl.dropboxusercontent.com/s/qapdpt751l9tn6z/0000.png",
+"https://dl.dropboxusercontent.com/s/102cdstea5kg1kf/0001.png",
+"https://dl.dropboxusercontent.com/s/x7txsfumd0q2mho/0002.png",
+"https://dl.dropboxusercontent.com/s/xdv6hkg45jn5ao4/0003.png",
+"https://dl.dropboxusercontent.com/s/qks3dayblipo4x4/0006.png",
+"https://dl.dropboxusercontent.com/s/xd3j45fwbz5i78r/0012.png",
+"https://dl.dropboxusercontent.com/s/5p2dp86kb04ogfb/0024.png"]};
+
+/*** SETTING COLOR CHART VALUES ***/
+// var colorvalues = {};
+
+/*** STRING LOCATIONS AS KEYS, URL ARRAYS AS VALUES ***/
+// var locationurls = {};
 
 // var locationurls = {"North America":"", 
 // "Southern California":"", 
@@ -82,7 +135,7 @@ function setColorChart() {
             colorvalues[lines[i]] = current / 10.0;
             current += 1;
         }
-        setLocationUrls(); // kludge because of asynchronous jquery
+        // setLocationUrls(); // kludge because of asynchronous jquery
     });
 }
 
@@ -90,7 +143,7 @@ function setColorChart() {
 /*** READ FROM FORMATTED TEXT FILE ON DROPBOX.
 AREA NAME ON A LINE FOLLOWED BY URLS ON THE NEXT LINES.
 RINSE AND REPEAT. ***/
-function setLocationUrls() {
+function setLocationUrls() { // not using anymore because of weird mobile issues
     var file = "https://dl.dropboxusercontent.com/s/xc264b3n3z2ejvv/swellnowurlstwo.txt";
     $.get(file,function(txt){ // make sure this process finishes before moving on
         var loc = "";
@@ -394,7 +447,9 @@ function init() {
     document.getElementById('dropmenu').style.maxWidth = defWidth + "px";
     document.getElementById('location-text').style.minWidth = defWidth + "px";
     document.getElementById('swellstatus').style.whiteSpace = "nowrap";
-    setColorChart(); // kludge because of asynchronous jquery. setColorChart --> setLocationUrls --> completeRestOfInit
+    // setColorChart(); // kludge because of asynchronous jquery. setColorChart --> setLocationUrls --> completeRestOfInit
+    setColorChart(); // location setting done manually because of mobile issues
+    completeRestOfInit(); // avoiding jquery cascading because mobile seems to hate it...manual ughhh
 }
 
 function completeRestOfInit() { // kludge function called in setLocationUrls
