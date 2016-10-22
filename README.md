@@ -1,1 +1,1 @@
-# Repository for website at swellnow.com
+# Website for SwellNow
