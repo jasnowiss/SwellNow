@@ -35,3 +35,15 @@
     </div>
   </div> -->
 </div>
+
+<!-- JavaScript -->
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+
+<!-- jQuery plugins, because the Rails default ones screwed me -->
+<%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js' %>
+
+<!-- Bootstrap Core JavaScript -->
+<%= javascript_include_tag 'bootstrap.min' %>
+
+<!-- Custom javascript shared by all pages -->
+<%= javascript_include_tag 'shared' %>
