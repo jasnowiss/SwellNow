@@ -15,7 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+# gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -45,16 +45,13 @@ group :development do
   gem 'spring'
 end
 
-# Static asset serving
+# Heroku Stuff
 gem 'rails_12factor', group: :production
-# Specific ruby version
-ruby "2.2.3"
-# Puma webserver
+# Specify Rails version
+# ruby "2.2.3"
+# Puma Webserver
 gem 'puma'
 
-# jQuery additions for animate
-# gem 'jquery-rails'
-# gem 'jquery-ui-rails'
-# gem 'rails-asset-jqueryui'
-# gem 'animate-rails'
+# gem 'tzinfo-data'
+
 
