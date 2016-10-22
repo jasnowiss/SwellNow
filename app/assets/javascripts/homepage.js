@@ -28,6 +28,12 @@ var context = canvas.getContext('2d');
 var minimumWidth = 800;
 var defWidth = document.getElementById('chart').offsetWidth;
 
+/*** SETTING COLOR CHART VALUES ***/
+var colorvalues = {};
+
+/*** STRING LOCATIONS AS KEYS, URL ARRAYS AS VALUES ***/
+var locationurls = {};
+
 // var locationurls = {"North America":"", 
 // "Southern California":"", 
 // "Santa Barbara":"https://dl.dropboxusercontent.com/s/4ervq1me95vdnw3/SB.png",
@@ -65,9 +71,6 @@ var defWidth = document.getElementById('chart').offsetWidth;
 //     rawFile.send(null);
 // }
 
-/*** SETTING COLOR CHART VALUES ***/
-var colorvalues = {};
-
 function setColorChart() {
     var file = "https://dl.dropboxusercontent.com/s/fvjgso66h0bd422/rgbcolors.txt";
     $.get(file,function(txt){ // make sure this process finishes before moving on
@@ -83,17 +86,15 @@ function setColorChart() {
     });
 }
 
-/*** STRING LOCATIONS AS KEYS, URL ARRAYS AS VALUES ***/
-var locationurls = {};
 
 /*** READ FROM FORMATTED TEXT FILE ON DROPBOX.
 AREA NAME ON A LINE FOLLOWED BY URLS ON THE NEXT LINES.
 RINSE AND REPEAT. ***/
 function setLocationUrls() {
-    var loc = "";
-    var urls = [];
     var file = "https://dl.dropboxusercontent.com/s/xc264b3n3z2ejvv/swellnowurlstwo.txt";
     $.get(file,function(txt){ // make sure this process finishes before moving on
+        var loc = "";
+        var urls = [];
         var lines = txt.split(/\s+/g);
         var lines = txt.split(/\n+/g);
         loc = lines[0]; // initialize first location
@@ -394,10 +395,6 @@ function init() {
     document.getElementById('location-text').style.minWidth = defWidth + "px";
     document.getElementById('swellstatus').style.whiteSpace = "nowrap";
     setColorChart(); // kludge because of asynchronous jquery. setColorChart --> setLocationUrls --> completeRestOfInit
-
-    // setLocationUrls();
-    // setNavAndCanvas("West Rhode Island");
-    // setTopBar();
 }
 
 function completeRestOfInit() { // kludge function called in setLocationUrls
