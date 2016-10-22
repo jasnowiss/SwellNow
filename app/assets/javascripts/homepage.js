@@ -65,7 +65,7 @@ var locationurls = {"Santa Barbara":
 "https://dl.dropboxusercontent.com/s/sifgix4q868v0jb/0012.png",
 "https://dl.dropboxusercontent.com/s/rgdoig6oqmtdq1y/0024.png"],
 "West Rhode Island":
-["https://dl.dropboxusercontent.com/s/o540f6nsy8d9et5/0000.png",
+["https://upload.wikimedia.org/wikipedia/commons/8/8c/JPEG_example_JPG_RIP_025.jpg",
 "https://dl.dropboxusercontent.com/s/xudr3py8hqt0khm/0001.png",
 "https://dl.dropboxusercontent.com/s/g67a03lku2ozdtv/0002.png",
 "https://dl.dropboxusercontent.com/s/4iyos22brxbfwpp/0003.png",
