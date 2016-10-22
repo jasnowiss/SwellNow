@@ -88,7 +88,7 @@ function drawCanvas(str, time = "Current") {
     // alert(getLocUrl("West Rhode Island", "Current"));
     var base_image = new Image();
     base_image.setAttribute('crossOrigin', 'Anonymous');
-    base_image.src = getLocUrl(str, time);
+    base_image.src = "https://dl.dropboxusercontent.com/s/kd5imgs6xehmzee/0000.png";
     base_image.onload = function(){
         var ratio = base_image.width / base_image.height;
         var chartSize = defWidth;
