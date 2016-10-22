@@ -78,7 +78,7 @@ function getLocUrl(str, time) {
     return locationurls[str][hoursToIndex[time]];
 }
 
-function drawCanvas(str, time = "Current") {
+function drawCanvas(str, time) {
     // context.fillStyle = "rgb(255,0,0)";
     // context.fillRect(0, 0, 50, 50);
     // context.fillStyle = "rgb(0,0,255)";
@@ -181,7 +181,7 @@ function getLocPathHelper(str, ar1, ar2) {
 
 function setNavAndCanvas(str) {
     createNavHTML(str);
-    drawCanvas(str); // Current by default upon changing. Can change to reflect current time setting.
+    drawCanvas(str, "Current"); // Current by default upon changing. Can change to reflect current time setting.
     document.getElementById('swellcolors').width = defWidth;
     resetDropdown();
     resetCanvasSensing();
