@@ -45,13 +45,16 @@ group :development do
   gem 'spring'
 end
 
-# Heroku Stuff
+# Static asset serving
 gem 'rails_12factor', group: :production
-# Specify Rails version
-# ruby "2.2.3"
-# Puma Webserver
+# Specific ruby version
+ruby "2.2.3"
+# Puma webserver
 gem 'puma'
 
-# gem 'tzinfo-data'
-
+# jQuery additions for animate
+# gem 'jquery-rails'
+# gem 'jquery-ui-rails'
+# gem 'rails-asset-jqueryui'
+# gem 'animate-rails'
 
