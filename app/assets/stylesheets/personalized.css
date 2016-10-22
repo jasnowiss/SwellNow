@@ -239,7 +239,7 @@ img::-moz-selection
 .container > .navbar-collapse,
 .container-fluid > .navbar-collapse {
 	margin-right: 0;
-	margin-left: 1px;
+	margin-left: 0;
 }
 
 @media (min-width:768px)
@@ -622,6 +622,9 @@ section h3.section-subheading
 /*** SECTION: DROPDOWN MENU ***/
 .dropdown .caret {
   transform:rotate(-90deg);
+}
+.dropdown .revertcaret {
+	transform:rotate(0deg);
 }
 .dropdown-menu>li
 {	position:relative;

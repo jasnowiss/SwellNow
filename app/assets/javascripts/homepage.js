@@ -5,15 +5,38 @@ var locations = ["North America",
 ["Southern California", ["Santa Barbara", "Los Angeles", "Orange County", "San Diego"]], 
 ["Rhode Island", ["West Rhode Island", "East Rhode Island"]]];
 
-var locationurls = {"North America":"", 
-"Southern California":"", 
-"Santa Barbara":"https://dl.dropboxusercontent.com/s/4ervq1me95vdnw3/SB.png",
-"Los Angeles":"https://dl.dropboxusercontent.com/s/f4h3zen6wi5it5y/LA.png",
-"Orange County":"https://dl.dropboxusercontent.com/s/ukgy4pbum1rc0f3/OC.png",
-"San Diego":"https://dl.dropboxusercontent.com/s/9oxio9ns6mizcq7/SD.png",
-"Rhode Island":"",
-"West Rhode Island":"https://dl.dropboxusercontent.com/s/fcvvui1npynxgkk/WestRI.png",
-"East Rhode Island":"https://dl.dropboxusercontent.com/s/x806t0i87pjahpj/EastRI.png"};
+var hours = ["Current", "-1 hour", "-2 hours", "-3 hours", "-6 hours", "-12 hours", "-24 hours"];
+
+var hoursToIndex = {"Current": 0,
+"-1 hour": 1,
+"-2 hours": 2,
+"-3 hours": 3,
+"-6 hours": 4,
+"-12 hours": 5,
+"-24 hours": 6};
+
+var hoursToAgo = {"Current": "current",
+"-1 hour": "1 hour ago",
+"-2 hours": "2 hours ago",
+"-3 hours": "3 hours ago",
+"-6 hours": "6 hours ago",
+"-12 hours": "12 hours ago",
+"-24 hours": "24 hours ago"};
+
+var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d');
+var minimumWidth = 800;
+var defWidth = document.getElementById('chart').offsetWidth;
+
+// var locationurls = {"North America":"", 
+// "Southern California":"", 
+// "Santa Barbara":"https://dl.dropboxusercontent.com/s/4ervq1me95vdnw3/SB.png",
+// "Los Angeles":"https://dl.dropboxusercontent.com/s/f4h3zen6wi5it5y/LA.png",
+// "Orange County":"https://dl.dropboxusercontent.com/s/ukgy4pbum1rc0f3/OC.png",
+// "San Diego":"https://dl.dropboxusercontent.com/s/9oxio9ns6mizcq7/SD.png",
+// "Rhode Island":"",
+// "West Rhode Island":"https://dl.dropboxusercontent.com/s/fcvvui1npynxgkk/WestRI.png",
+// "East Rhode Island":"https://dl.dropboxusercontent.com/s/x806t0i87pjahpj/EastRI.png"};
 
 /*** SECTION FOR RESIZING ***/
 // resize the canvas to fill browser window dynamically
@@ -23,18 +46,31 @@ var locationurls = {"North America":"",
 //     resizeCanvas();
 // }
 
-var canvas = document.getElementById('canvas');
-var context = canvas.getContext('2d');
-var minimumWidth = 800;
-var defWidth = document.getElementById('chart').offsetWidth;
-
+/*** FOR READING TEXT FILES, BECAUSE ISSUES WITH ASYNCHRONOUS AJAX REQUESTS ***/
+// function readTextFile(file) {
+//     var rawFile = new XMLHttpRequest();
+//     rawFile.open("GET", file, false);
+//     rawFile.onreadystatechange = function ()
+//     {
+//         if(rawFile.readyState === 4)
+//         {
+//             if(rawFile.status === 200 || rawFile.status == 0)
+//             {
+//                 var allText = rawFile.responseText;
+//                 // alert(allText);
+//                 return allText
+//             }
+//         }
+//     }
+//     rawFile.send(null);
+// }
 
 /*** SETTING COLOR CHART VALUES ***/
 var colorvalues = {};
 
 function setColorChart() {
     var file = "https://dl.dropboxusercontent.com/s/fvjgso66h0bd422/rgbcolors.txt";
-    $.get(file,function(txt){
+    $.get(file,function(txt){ // make sure this process finishes before moving on
         var lines = txt.split(/\s+/g);
         var current = 1;
         var end = 150;
@@ -43,7 +79,36 @@ function setColorChart() {
             colorvalues[lines[i]] = current / 10.0;
             current += 1;
         }
-    }); 
+        setLocationUrls(); // kludge because of asynchronous jquery
+    });
+}
+
+/*** STRING LOCATIONS AS KEYS, URL ARRAYS AS VALUES ***/
+var locationurls = {};
+
+/*** READ FROM FORMATTED TEXT FILE ON DROPBOX.
+AREA NAME ON A LINE FOLLOWED BY URLS ON THE NEXT LINES.
+RINSE AND REPEAT. ***/
+function setLocationUrls() {
+    var loc = "";
+    var urls = [];
+    var file = "https://dl.dropboxusercontent.com/s/xc264b3n3z2ejvv/swellnowurlstwo.txt";
+    $.get(file,function(txt){ // make sure this process finishes before moving on
+        var lines = txt.split(/\s+/g);
+        var lines = txt.split(/\n+/g);
+        loc = lines[0]; // initialize first location
+        for (var i = 1; i < lines.length - 1; i++) { // -1 offset for lines.length to account for newline at end of file
+            if (lines[i].startsWith("https:")) {
+                urls.push(lines[i]);
+            } else {
+                locationurls[loc] = urls;
+                loc = lines[i];
+                urls = [];
+            }
+        }
+        locationurls[loc] = urls; // set last location
+        completeRestOfInit(); // kludge because of asynchronous jquery
+    });
 }
 
 // function resizeCanvas() {
@@ -60,19 +125,20 @@ function setColorChart() {
 //         drawCanvas(locationurls.Los_Angeles); 
 // }
 
-function getLocUrl(str) {
-    return locationurls[str];
+function getLocUrl(str, time) {
+    return locationurls[str][hoursToIndex[time]];
 }
 
-function drawCanvas(str) {
+function drawCanvas(str, time = "Current") {
     // context.fillStyle = "rgb(255,0,0)";
     // context.fillRect(0, 0, 50, 50);
     // context.fillStyle = "rgb(0,0,255)";
     // context.fillRect(55, 0, 50, 50);
     // var chartSize = document.getElementById('chart').offsetWidth * 2.0 / 3.0;
+    // alert(getLocUrl("West Rhode Island", "Current"));
     var base_image = new Image();
     base_image.setAttribute('crossOrigin', 'Anonymous');
-    base_image.src = getLocUrl(str);
+    base_image.src = getLocUrl(str, time);
     base_image.onload = function(){
         var ratio = base_image.width / base_image.height;
         var chartSize = defWidth;
@@ -81,6 +147,14 @@ function drawCanvas(str) {
         canvas.style.cursor = "crosshair";
         context.drawImage(base_image, 0, 0, chartSize, chartSize / ratio);
     }
+}
+
+function drawCanvasForTime(str, time) {
+    var html = "";
+    html += "" + time + " <span class='caret revertcaret'></span> ";
+    $('#canvastime').html(html);
+    $('#location-text').html("<p>Displaying swell for " + str + " (" + hoursToAgo[time] + ")" + "</p>");
+    drawCanvas(str, time);
 }
 
 // function setup() {
@@ -107,7 +181,7 @@ function createNavHTML(str) {
 
 function createNavHTMLHelper(ar) {
     var html = "";
-
+    // BASE NAVIGATION BUTTON
     html += "<div id='dd-menu1' class='dropdown' style='position:relative;display:inline-block'>";
     html += "<a href='#' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>" + locations[0] + " <span class='caret'></span></a>";
     html += "<ul class='dropdown-menu'>";
@@ -123,7 +197,7 @@ function createNavHTMLHelper(ar) {
     }
     html += "</ul>";
     html += "</div>";
-
+    // SUB NAVIGATION BUTTON 1
     html += "<div class='dropdown' style='position:relative;display:inline-block;margin-left:5px'>";
     html += "<a href='#' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>" + locations[ar[0]][0] + " <span class='caret'></span></a>";
     html += "<ul class='dropdown-menu'>";
@@ -132,12 +206,22 @@ function createNavHTMLHelper(ar) {
     }
     html += "</ul>";
     html += "</div>";
-    
+    // SUB NAVIGATION BUTTON 2
     html += "<div class='dropdown' style='position:relative;display:inline-block;margin-left:5px'>";
     html += "<a href='#' class='btn btn-primary' onclick='setNavAndCanvas(&#39;" + locations[ar[0]][ar[1]][ar[2]] + "&#39;);return false;'>" + locations[ar[0]][ar[1]][ar[2]] + "</a>";
     html += "</div>";
+    // CURRENT AND PREVIOUS IMAGES BUTTON (IN PROGRESS)
+    html += "<div class='dropdown' style='position:relative;display:inline-block;float:right'>";
+    html += "<a href='#' id='canvastime' class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>" + hours[0] + " <span class='caret revertcaret'></span></a>";
+    html += "<ul class='dropdown-menu'>";
+    for (var l = 0; l < hours.length; l++) {
+        html += "<li><a href='#' onclick='drawCanvasForTime(&#39;" + locations[ar[0]][ar[1]][ar[2]] + "&#39;, &#39;" + hours[l] + "&#39;);return false;'>" + hours[l] + "</a></li>";
+    }
+    html += "</ul>";
+    html += "</div>";
 
-    $('#location-text').html("<p>Displaying swell for " + locations[ar[0]][ar[1]][ar[2]] + "</p>");
+    // LOCATION DISPLAY TEXT
+    $('#location-text').html("<p>Displaying swell for " + locations[ar[0]][ar[1]][ar[2]] + " (current)" + "</p>");
     $('#dropmenu').html(html);
 }
 
@@ -165,7 +249,7 @@ function getLocPathHelper(str, ar1, ar2) {
 
 function setNavAndCanvas(str) {
     createNavHTML(str);
-    drawCanvas(str);
+    drawCanvas(str); // Current by default upon changing. Can change to reflect current time setting.
     document.getElementById('swellcolors').width = defWidth;
     resetDropdown();
     resetCanvasSensing();
@@ -306,9 +390,17 @@ function init() {
         defWidth = minimumWidth;
     }
     document.getElementById('dropmenu').style.minWidth = defWidth + "px";
+    document.getElementById('dropmenu').style.maxWidth = defWidth + "px";
     document.getElementById('location-text').style.minWidth = defWidth + "px";
     document.getElementById('swellstatus').style.whiteSpace = "nowrap";
-    setColorChart();
+    setColorChart(); // kludge because of asynchronous jquery. setColorChart --> setLocationUrls --> completeRestOfInit
+
+    // setLocationUrls();
+    // setNavAndCanvas("West Rhode Island");
+    // setTopBar();
+}
+
+function completeRestOfInit() { // kludge function called in setLocationUrls
     setNavAndCanvas("West Rhode Island");
     setTopBar();
 }
