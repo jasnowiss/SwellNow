@@ -1,6 +1,7 @@
 /*** JAVASCRIPT AND JQUERY FOR HOMEPAGE ***/
 
 /*** 1. MAIN IDENTIFIER, 2...END. SUB-IDENTIFIERS ***/
+
 var locations = ["North America", 
 ["Southern California", ["Santa Barbara", "Los Angeles", "Orange County", "San Diego"]], 
 ["Rhode Island", ["West Rhode Island", "East Rhode Island"]]];
