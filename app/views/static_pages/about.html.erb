@@ -1,37 +1,35 @@
 <% provide(:title, "SwellNow") %>
 
-<div class="page-home container" style="text-align: left">
-  <div style="display: inline-block; border-radius: 8px; overflow: hidden">
-    <h2>How Swellnow Works:</h2>
+<div class="container page-home" style="text-align: left">
+  <div>
+    <h3>How is SwellNow different than other surf forecasting websites?</h3>
   </div>
-  <div class="container">
-  <div class="row" style="margin-top: 37px; text-align: left">
+  <div style="margin-top: 30px; margin-bottom: 30px">
+    <p>
+      Well, first of all… we aren’t technically a forecasting website at all. Our models are created using real-time conditions, and updated hourly. The charts are high-resolution, and take into account the tides, wind, and water depth nearshore. Refraction, and diffraction are also calculated to show where a swell may be focusing the most, or how much the swell is focusing towards a location or bending around an obstacle.
+    </p>
+    <p>
+      Other sites have focused more on pretty graphics to distract users from the low quality and accuracy of their nearshore swell charts. Although many of these sites are decent at mid to long range forecasts, it is difficult to tell the current conditions without looking at cameras. For areas without cameras, most surfers have learned which location is best based off of their local buoy readings. SwellNow deviates from this norm by using this measured buoy data as input for our models. We are not attempting to catch up to or compete with the other global swell forecasting sites, instead we are aiming to provide a tool that surfers can use to really <em>know where to go</em>… even when the cameras are down, and your favorite surf reporter can’t see the waves from his bed or favorite coffeeshop.
+    </p>
+  </div>
+  <div>
+    <h3>How Does SwellNow Work?</h3>
+  </div>
+  <div style="margin-top: 30px; margin-bottom: 50px">
+    <p>
+      Wave heights are measured at a NOAA buoy, using accelerometers. The raw data consists of vertical and horizontal forces due to waves. This can vary from long period swells, to small wind ripples. By breaking down this data, NOAA can determine the amount of energy in each frequency, along with the peak direction, and the directional spreading. This can be used to reassemble the sea state at the location where the information was gathered.
+    </p>
     <div>
-      <p>
-        1. Swell is measured offshore by NOAA's buoys.
-      </p>
-      <p>
-        2. Finish later...
-      </p>
+      <img id="seastatehq" src="https://dl.dropboxusercontent.com/s/bocdbnzsdmvejrk/State_HQ.gif" alt="seastate" style="width: 850px; margin-left: -65px"/>
     </div>
+    <p>
+      In the figure above, the left side shows the spectral energy density at a specific location, while the right side shows the sea state. The spectral energy density graph plots the energy against the direction, and period of the swell. The direction is clearly labeled, while the period decreases in the positive radial direction. Swells will be close to the center, and consist of a more condensed peak, while the shorter period wind chop will lie near the outside. As seen in this graph, there is a swell from the southwest direction, with a west wind chop present.
+    </p>
+    <p>
+      We use this data as a boundary condition to force our nearshore wave model. A larger model is used to create boundary conditions for our regional models, and these are used to estimate nearshore significant wave heights. The significant wave height is equal to the top &frac13; of all waves at a measured location. Set waves, or the peaks of a wave group will likely be around 50% larger than this number, but this number can vary if there are multiple directions present.
+    </p>
+    <p>
+      We use the SWAN model to calculate the wave heights across our domain. SWAN (Simulating WAves Nearshore) is a third-generation wave model that uses the wave-action balance equation. Simply stated, the wave spectrum is equal to the existing energy of waves, plus the energy input (i.e. wind, focusing), minus any dissipated energy (bottom friction, whitecapping, obstacles waves). If the swell does not feel any forces, the spectrum will be conserved.
+    </p>
   </div>
-</div>
-  <!-- <div style="display: inline-block; border-radius: 8px; overflow: hidden">
-    <div id="borderimg1">
-      <h2>SwellNow About</h2> 
-      <p class="nav-properties" style="margin-top: 15px">Buoys, Waves, Profit?</p>
-    </div>
-  </div>
-</div>
-<div class="text-container-overlay-four">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2">
-        <h3>Contact</h3>
-      </div>
-      <div class="col-md-3 vcenter">
-        <p class="nav-properties">thewavestuffguys.com</p>
-      </div>  
-    </div>
-  </div> -->
 </div>

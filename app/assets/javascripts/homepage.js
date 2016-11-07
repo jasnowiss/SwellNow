@@ -34,6 +34,38 @@ var colorvalues = {};
 /*** STRING LOCATIONS AS KEYS, URL ARRAYS AS VALUES ***/
 var locationurls = {};
 
+/*** STRING FOR CURRENT LOCATION BASED ON GEOLOCATION ***/ 
+var currentloc = "West Rhode Island";
+
+
+function setCurrentLocation() {
+    $.getJSON("http://freegeoip.net/json/", function(data) {
+        var ip = data.ip;
+        var country_code = data.country_code;
+        var country_name = data.country_name;
+        var region_code = data.region_code;
+        var region_name = data.region_name;
+        var city = data.city;
+        var zip_code = data.zip_code;
+        var time_zone = data.time_zone;
+        var latitude = data.latitude;
+        var longitude = data.longitude;
+        var metro_code = data.metro_code;
+        if (country_name == "United States") { // temporary kludge
+            if (longitude < -92.5) { // between -120 and -65
+                currentloc = "Santa Barbara";
+            } else if (longitude < -65.0) {
+                currentloc = "West Rhode Island";
+            } else {
+                currentloc = "West Rhode Island";
+            }
+        } else {
+            currentloc = "West Rhode Island";
+        }
+        setColorChart(); // kludge because of asynchronous jquery
+    });
+}
+
 function setColorChart() {
     var file = "https://dl.dropboxusercontent.com/s/fvjgso66h0bd422/rgbcolors.txt";
     $.get(file,function(txt){ // make sure this process finishes before moving on
@@ -182,7 +214,8 @@ function getLocPathHelper(str, ar1, ar2) {
 function setNavAndCanvas(str) {
     createNavHTML(str);
     drawCanvas(str, "Current"); // Current by default upon changing. Can change to reflect current time setting.
-    document.getElementById('swellcolors').width = defWidth;
+    // document.getElementById('swellcolors').width = defWidth;
+    $('#swellcolors').html("<img src='https://dl.dropboxusercontent.com/s/0yospz8q02iiofs/SwellColors.png' alt='colorchart' style='width: " + defWidth + "px'/>");
     resetDropdown();
     resetCanvasSensing();
 }
@@ -310,7 +343,7 @@ function setTopBar() {
 }
 
 function completeRestOfInit() { // kludge function called in setLocationUrls
-    setNavAndCanvas("West Rhode Island");
+    setNavAndCanvas(currentloc);
     setTopBar();
 }
 
@@ -322,6 +355,7 @@ function init() {
     document.getElementById('dropmenu').style.maxWidth = defWidth + "px";
     document.getElementById('location-text').style.minWidth = defWidth + "px";
     document.getElementById('swellstatus').style.whiteSpace = "nowrap";
+    // setCurrentLocation(); // not sure if this is a consistent method
     setColorChart(); // kludge because of asynchronous jquery. setColorChart --> setLocationUrls --> completeRestOfInit
 }
 
