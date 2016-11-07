@@ -34,8 +34,8 @@ var colorvalues = {};
 /*** STRING LOCATIONS AS KEYS, URL ARRAYS AS VALUES ***/
 var locationurls = {};
 
-/*** STRING FOR CURRENT LOCATION BASED ON GEOLOCATION ***/ 
-var currentloc = "West Rhode Island";
+/*** STRING FOR CURRENT LOCATION BASED ON GEOLOCATION. DEFAULT IS SANTA BARBARA ***/ 
+var currentloc = "Santa Barbara";
 
 
 function setCurrentLocation() {
